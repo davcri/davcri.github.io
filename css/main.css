@@ -1,0 +1,26 @@
+.card-shadow-hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px 1px;
+  /*transform: translate(0px, 100px);*/
+  /*transform: translate(0px, 10px);*/
+  transition: 0.35s;
+  color: rgb(33, 37, 41); /* TODO: Remove hardcoded value */
+}
+
+.card-shadow-hover:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px 2px;
+  /*transform: translate(100);*/
+  transform: translate(0px, -4px);
+  transition: 0.35s;
+}
+
+.card-shadow-hover>a:hover {
+    text-decoration: none
+}
+
+.article-header {
+    background-color: rgb(220, 200, 200);
+}
+
+.container {
+    width: 70%;
+}

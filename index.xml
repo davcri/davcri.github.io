@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Crystal Bit</title>
+    <link>https://davcri.github.io/</link>
+    <description>Recent content on Crystal Bit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>davcri91@gmail.com (Davide Cristini)</managingEditor>
+    <webMaster>davcri91@gmail.com (Davide Cristini)</webMaster>
+    <lastBuildDate>Sat, 20 Jan 2018 17:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://davcri.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Four software projects I developed during college</title>
+      <link>https://davcri.github.io/posts/software-projects-college/</link>
+      <pubDate>Sat, 20 Jan 2018 17:00:00 +0100</pubDate>
+      <author>davcri91@gmail.com (Davide Cristini)</author>
+      <guid>https://davcri.github.io/posts/software-projects-college/</guid>
+      <description>&lt;p&gt;During my time in Computer Engineering college in Italy, I developed
+various kind of software projects as an assignment for the courses.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>https://davcri.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>davcri91@gmail.com (Davide Cristini)</author>
+      <guid>https://davcri.github.io/about/</guid>
+      <description>I&amp;rsquo;m Davide Cristini. I&amp;rsquo;m a software developer who loves to share thoughts about free and open source software, videogames and GNU\Linux OS.
+You can take a peek at my public projects and contributions on Github and Gitlab.
+Contact me I love talking to new people, feel free to contact me for anything!
+ Email: davcri91@gmail.com Twitter: twitter.com/dav__cri  I&amp;rsquo;m also on Google Plus but I don&amp;rsquo;t use it very often.</description>
+    </item>
+    
+  </channel>
+</rss>
