@@ -1,6 +1,5 @@
 <!doctype html>
-<html>
-    <body>
+<html lang="en">
         <head>
             
 <script>
@@ -17,24 +16,32 @@ ga('send', 'pageview');
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-            <link rel="shortcut icon" type="image/png" href="/img/logo/logo-5.png"/>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-            <link rel="stylesheet" href="/css/main.css">
-            
-
             
 <title> QEMU: quick guide to a powerful virtualization tool </title>
 
 
+            
+<meta name="description" content="Sometimes you want to try a new operating system or particular software
+configuration, but you …"/>
+<meta property="og:title" content="QEMU: quick guide to a powerful virtualization tool" />
+<meta property="og:image" content="https://davcri.github.io/img/posts/thumbs/qemu.png" />
+<meta property="og:url" content="https://davcri.github.io/posts/qemu/" />
+<meta property="og:description" content="Sometimes you want to try a new operating system or particular software
+configuration, but you …" />
+<meta property="og:type" content="article" />
+
+
+            <link rel="shortcut icon" type="image/png" href="/img/logo/logo-5.png"/>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+            <link rel="stylesheet" href="/css/main.css">
+            
         </head>
 
-
+    <body>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
         <script src="https://use.fontawesome.com/03364e4af9.js"></script>
-
-
 
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <a class="navbar-brand" href=" https://davcri.github.io/">
@@ -90,11 +97,11 @@ ga('send', 'pageview');
                     4min read <br>
 
                     
-                      <span class="badge badge-pill badge-primary">linux</span>  
+                      <span class="badge badge-pill badge-primary">linux</span>
                     
-                      <span class="badge badge-pill badge-primary">software</span>  
+                      <span class="badge badge-pill badge-primary">software</span>
                     
-                      <span class="badge badge-pill badge-primary">qemu</span>  
+                      <span class="badge badge-pill badge-primary">qemu</span>
                     
                 </p>
             </div>
@@ -178,24 +185,28 @@ of RAM and with KVM enabled (it speeds up the virtualization, a lot!).</p>
 
 
 <div class="text-center">
-<figure >
-    
-    <img src="./qemu-ubuntu.png" 
-         alt="Ubuntu as a guest"
-         class="figure-img img-fluid rounded"
-    />
-    
-    
-    <figcaption class="figure-caption">
-        <p>
-        Ubuntu as a guest
+    <figure >
         
+        <img src="./qemu-ubuntu.png" 
+             alt="Ubuntu as a guest"
+             class="figure-img img-fluid rounded"
+        />
+        
+        
+
+        <figcaption class="figure-caption">
             
+
+            
+            <p>
+                Ubuntu as a guest
+                
+                
+                
+            </p> 
+        </figcaption>
         
-        </p> 
-    </figcaption>
-    
-</figure>
+    </figure>
 </div>
 
 
@@ -223,14 +234,14 @@ Initially it will take only few KBs:</p>
 
 
 <div class="text-center">
-<figure >
-    
-    <img src="./image-size.png" 
-         class="figure-img img-fluid rounded"
-    />
-    
-    
-</figure>
+    <figure >
+        
+        <img src="./image-size.png" 
+             class="figure-img img-fluid rounded"
+        />
+        
+        
+    </figure>
 </div>
 
 
@@ -289,70 +300,82 @@ So for Antergos there is this AUR package:
 
 <p>
 <div class="text-center">
-<figure >
-    
-    <img src="./android6.png" 
-         alt="Android on qemu"
-         class="figure-img img-fluid rounded"
-    />
-    
-    
-    <figcaption class="figure-caption">
-        <p>
-        Android on qemu
+    <figure >
         
+        <img src="./android6.png" 
+             alt="Android on qemu"
+             class="figure-img img-fluid rounded"
+        />
+        
+        
+
+        <figcaption class="figure-caption">
             
+
+            
+            <p>
+                Android on qemu
+                
+                
+                
+            </p> 
+        </figcaption>
         
-        </p> 
-    </figcaption>
-    
-</figure>
+    </figure>
 </div>
 
 
 
 <div class="text-center">
-<figure >
-    
-    <img src="./antergos.png" 
-         alt="Antergos on qemu"
-         class="figure-img img-fluid rounded"
-    />
-    
-    
-    <figcaption class="figure-caption">
-        <p>
-        Antergos on qemu
+    <figure >
         
+        <img src="./antergos.png" 
+             alt="Antergos on qemu"
+             class="figure-img img-fluid rounded"
+        />
+        
+        
+
+        <figcaption class="figure-caption">
             
+
+            
+            <p>
+                Antergos on qemu
+                
+                
+                
+            </p> 
+        </figcaption>
         
-        </p> 
-    </figcaption>
-    
-</figure>
+    </figure>
 </div>
 
 
 
 <div class="text-center">
-<figure >
-    
-    <img src="./windows7.png" 
-         alt="Windows 7 on qemu"
-         class="figure-img img-fluid rounded"
-    />
-    
-    
-    <figcaption class="figure-caption">
-        <p>
-        Windows 7 on qemu
+    <figure >
         
+        <img src="./windows7.png" 
+             alt="Windows 7 on qemu"
+             class="figure-img img-fluid rounded"
+        />
+        
+        
+
+        <figcaption class="figure-caption">
             
+
+            
+            <p>
+                Windows 7 on qemu
+                
+                
+                
+            </p> 
+        </figcaption>
         
-        </p> 
-    </figcaption>
-    
-</figure>
+    </figure>
 </div>
 
 </p>
