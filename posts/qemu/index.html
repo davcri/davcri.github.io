@@ -1,0 +1,408 @@
+<!doctype html>
+<html>
+    <body>
+        <head>
+            
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-112742714-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+            <link rel="shortcut icon" type="image/png" href="/img/logo/logo-5.png"/>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+            <link rel="stylesheet" href="/css/main.css">
+            
+
+            
+<title> QEMU: quick guide to a powerful virtualization tool </title>
+
+
+        </head>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/03364e4af9.js"></script>
+
+
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href=" https://davcri.github.io/">
+        <img src="/img/logo/logo-5.png" width="32" height="32" alt="">
+        Crystal Bit
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            
+
+            
+
+                <li class="nav-item
+                        
+                        ">
+                    <a class="nav-link" href="/"> Blog </a>
+                </li>
+
+            
+
+                <li class="nav-item
+                        
+                        ">
+                    <a class="nav-link" href="/about/"> About </a>
+                </li>
+
+            
+        </ul>
+    </div>
+
+</nav>
+
+
+        <div class="container">
+
+             
+
+            
+
+<div class="card my-3">
+
+    <div class="card-body">
+        <h2 class="card-title"> QEMU: quick guide to a powerful virtualization tool </h2>
+
+        <div class="row">
+            <div class="col">
+                <p class="text-muted">
+                    4min read <br>
+
+                    
+                      <span class="badge badge-pill badge-primary">linux</span>  
+                    
+                      <span class="badge badge-pill badge-primary">software</span>  
+                    
+                      <span class="badge badge-pill badge-primary">qemu</span>  
+                    
+                </p>
+            </div>
+            <div class="col">
+                <p class="text-right text-muted">
+                    March 10, 2018
+                </p>
+            </div>
+        </div>
+
+        
+        <div class="text-center">
+            <img class="img-fluid" src="/img/posts/thumbs/qemu.png" alt="Qemu thumbnail" style="max-height: 20em;">
+        </div>
+        
+
+        <hr>
+
+        <div id="post-content" class="card-text">
+            <p>Sometimes you want to try a new operating system or particular software
+configuration, but you don&rsquo;t want to touch your precious PC, risking
+to make your main production system unbootable.
+In these cases, software virtualization is your friend.</p>
+
+<p></p>
+
+<p><strong>QEMU</strong> is a great open source virtualization tool
+available exclusively on Linux based systems. Compared to <em>Virtualbox</em>, it is better
+integrated and has a smaller footprint.</p>
+
+<h1 id="overview">Overview</h1>
+
+<p>In this quick guide you will see how to use QEMU to run a Linux Distro (but
+you can run also other systems like <em>Windows</em>, <em>Android x86</em> or others).
+The main steps that we are going to do are:</p>
+
+<ol>
+<li>Install <code>qemu</code></li>
+<li>Download an operating system to virtualize (called <em>guest OS</em>)</li>
+<li>Run the guest OS</li>
+<li>[<em>Optional</em>] Configure a virtual disk (to enable data persistence)</li>
+<li>[<em>Optional</em>] Create a simple script to easily run the guest OS</li>
+</ol>
+
+<p>Let&rsquo;s get started!</p>
+
+<h2 id="1-installing-qemu">1. Installing qemu</h2>
+
+<p>First open your terminal and install qemu:</p>
+
+<p>For Ubuntu and derivatives:
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">apt install qemu</code></pre></div></p>
+
+<p>Or for Arch linux and derivatives:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -S qemu</code></pre></div>
+
+<h2 id="2-download-an-operating-system">2. Download an operating system</h2>
+
+<p>Right now will use <em>Ubuntu</em> as a guest OS, but feel free to experiment
+with many others: QEMU supports a large amount of systems.</p>
+
+<p>Follow these steps to create a new directory and download the Ubuntu ISO:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd 
+mkdir virtual-systems 
+cd virtual-systems
+wget -c http://releases.ubuntu.com/16.04/ubuntu-16.04.4-desktop-amd64.iso</code></pre></div>
+
+<h2 id="3-run-the-guest-operating-system">3. Run the guest operating system</h2>
+
+<p>QEMU can be easily used from the terminal: I prefer this way, because I
+encountered some small quirks with the available graphic frontends (but in the
+last years they improved a lot).
+However let&rsquo;s focus on getting things done, so grab the terminal and type:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">qemu-system-x86_64 -enable-kvm -m 2G ubuntu-16.04.4-desktop-amd64.iso</code></pre></div>
+
+<p>The last command tells qemu to virtualize an x86 environment with 2 GigaBytes
+of RAM and with KVM enabled (it speeds up the virtualization, a lot!).</p>
+
+
+<div class="text-center">
+<figure >
+    
+    <img src="./qemu-ubuntu.png" 
+         alt="Ubuntu as a guest"
+         class="figure-img img-fluid rounded"
+    />
+    
+    
+    <figcaption class="figure-caption">
+        <p>
+        Ubuntu as a guest
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+</div>
+
+
+
+<p>Now you can experiment with the live operating system as much as you want,
+because <strong>changes made now, won&rsquo;t be persisted</strong>. This means that if you reboot the
+guest OS, you will lose all your changes.</p>
+
+<p>If you want to enable persistence, continue with the section!</p>
+
+<h2 id="4-configure-a-virtual-disk">4. Configure a virtual disk</h2>
+
+<p>To keep changes across reboots (of the guest os, not out main system), we need
+to save them somewhere. To tell QEMU where to persist the data, we can use a so called
+<em>virtual disk image</em>. Let&rsquo;s create one:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># create a file &#34;disk_image&#34; with format qcow2 and 40GB of max space
+</span><span style="color:#75715e"></span>qemu-img create -f qcow2 disk_image 40G</code></pre></div>
+
+<p>This command will create a virtual disk file called <code>disk_image</code>: the parameters
+specifies a maximum size of 40GB and the <a href="https://en.wikipedia.org/wiki/Qcow">qcow2</a>
+format. Don&rsquo;t worry about the size, because the file will grow only
+when the space will be actually used by the virtual OS.
+Initially it will take only few KBs:</p>
+
+
+<div class="text-center">
+<figure >
+    
+    <img src="./image-size.png" 
+         class="figure-img img-fluid rounded"
+    />
+    
+    
+</figure>
+</div>
+
+
+
+<p>At this point we can tell QEMU to actually use the virtual disk:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">qemu-system-x86_64 -cdrom ubuntu-16.04.4-desktop-amd64.iso -boot order<span style="color:#f92672">=</span>d -enable-kvm -m 2G -drive file<span style="color:#f92672">=</span>disk_image</code></pre></div>
+
+<p>Finally we boot up a virtual system with persistance!</p>
+
+<p>Now <strong>start the Ubuntu installation</strong>. When it&rsquo;s finished, you will have all the
+data in <code>disk_image</code> and it will be possible to run Ubuntu using only this file, without
+the ISO.</p>
+
+<p>From now on, you can start the guest OS (with persistance enabled) using:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">qemu-system-x86_64 -enable-kvm -m 2G -drive file<span style="color:#f92672">=</span>disk_image</code></pre></div>
+<p>do you find it too long to type ? Then read the final step.</p>
+
+<h2 id="5-create-a-script-to-run-the-os">5. Create a script to run the OS</h2>
+
+<p>A good idea to easily launch your virutal system is to use a script. Open an
+editor and copy/paste this code:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>options<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-vga qxl --enable-kvm -m 4G&#34;</span>
+image<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;disk_image&#34;</span>
+
+qemu-system-x86_64 $options $image</code></pre></div>
+
+<p>Save it as <code>launch-ubuntu.sh</code> and make it executable using
+<code>chmodx +x launch-ubuntu.sh</code>.</p>
+
+<p>Everytime that you want to run your virtual Ubuntu system, you can
+simply go into the <code>~/virtual-systems</code> folder and execute it:
+<code>./launch-ubuntu.sh</code>.</p>
+
+<p><br></p>
+
+<h3 id="possible-quirks">Possible quirks</h3>
+
+<p>When running a virtual system, you can encounter some problem. Personally I
+had some issues with setting the resolution of the guest OS. For example
+I once installed Antergos (Xfce) guest and I had only a minimal 640x480
+resolution.
+To fix this little problem I had to install <code>qxl</code> on the guest system.
+So for Antergos there is this AUR package:
+<a href="https://aur.archlinux.org/packages/xf86-video-qxl/">https://aur.archlinux.org/packages/xf86-video-qxl/</a>:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">yaourt -S xf86-video-qxl</code></pre></div>
+
+<p>After installing it, simply reboot and then change the resolution.</p>
+
+<hr />
+
+<h2 id="running-examples">Running examples</h2>
+
+<p>
+<div class="text-center">
+<figure >
+    
+    <img src="./android6.png" 
+         alt="Android on qemu"
+         class="figure-img img-fluid rounded"
+    />
+    
+    
+    <figcaption class="figure-caption">
+        <p>
+        Android on qemu
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+</div>
+
+
+
+<div class="text-center">
+<figure >
+    
+    <img src="./antergos.png" 
+         alt="Antergos on qemu"
+         class="figure-img img-fluid rounded"
+    />
+    
+    
+    <figcaption class="figure-caption">
+        <p>
+        Antergos on qemu
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+</div>
+
+
+
+<div class="text-center">
+<figure >
+    
+    <img src="./windows7.png" 
+         alt="Windows 7 on qemu"
+         class="figure-img img-fluid rounded"
+    />
+    
+    
+    <figcaption class="figure-caption">
+        <p>
+        Windows 7 on qemu
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+</div>
+
+</p>
+
+<h2 id="useful-links">Useful links</h2>
+
+<ul>
+<li><a href="https://www.qemu.org/">https://www.qemu.org/</a></li>
+<li><a href="https://wiki.archlinux.org/index.php/">https://wiki.archlinux.org/index.php/</a></li>
+</ul>
+        </div>
+
+        <div class="share">
+            <h4> Share </h4>
+            <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fdavcri.github.io%2fposts%2fqemu%2f"> Share on Twitter </a>
+        </div>
+    </div>
+</div>
+
+
+
+            <div class="bg-dark text-white px-3 py-3">
+
+    <div class="row">
+        <div class="col-sm">
+            <p class="text-muted"> © 2018 Davide Cristini </p>
+        </div>
+
+        <div class="col-sm">
+        </div>
+
+        <div class="col-sm text-right">
+            <a href="https://davcri.github.io/index.xml">
+                <i class="fa fa-2x fa-rss-square"></i>
+            </a>
+            <a href="https://twitter.com/dav__cri">
+                <i class="fa fa-2x fa-twitter-square"></i>
+            </a>
+            <a href="https://plus.google.com/u/0/&#43;DavideCristini">
+                <i class="fa fa-2x fa-google-plus-square"></i>
+            </a>
+            <a href="mailto:davcri91@gmail.com">
+                <i class="fa fa-2x fa-envelope-o"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+
+    </body>
+</html>
