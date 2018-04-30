@@ -8,10 +8,19 @@
     <language>en-us</language>
     <managingEditor>davcri91@gmail.com (Davide Cristini)</managingEditor>
     <webMaster>davcri91@gmail.com (Davide Cristini)</webMaster>
-    <lastBuildDate>Sat, 10 Mar 2018 10:20:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 01 May 2018 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://davcri.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Indie</title>
+      <link>https://davcri.github.io/tags/indie/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0100</pubDate>
+      <author>davcri91@gmail.com (Davide Cristini)</author>
+      <guid>https://davcri.github.io/tags/indie/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Linux</title>
@@ -37,6 +46,15 @@
       <pubDate>Sat, 10 Mar 2018 10:20:00 +0100</pubDate>
       <author>davcri91@gmail.com (Davide Cristini)</author>
       <guid>https://davcri.github.io/tags/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Videogames</title>
+      <link>https://davcri.github.io/tags/videogames/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0100</pubDate>
+      <author>davcri91@gmail.com (Davide Cristini)</author>
+      <guid>https://davcri.github.io/tags/videogames/</guid>
       <description></description>
     </item>
     

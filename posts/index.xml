@@ -8,10 +8,26 @@
     <language>en-us</language>
     <managingEditor>davcri91@gmail.com (Davide Cristini)</managingEditor>
     <webMaster>davcri91@gmail.com (Davide Cristini)</webMaster>
-    <lastBuildDate>Sat, 10 Mar 2018 10:20:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 01 May 2018 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://davcri.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Five amazing indie videogames @BonusStage 2018</title>
+      <link>https://davcri.github.io/posts/bonus-stage-indie-games/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0100</pubDate>
+      <author>davcri91@gmail.com (Davide Cristini)</author>
+      <guid>https://davcri.github.io/posts/bonus-stage-indie-games/</guid>
+      <description>&lt;p&gt;A cozy gaming bar filled with passionate game developers showing their creations.
+These are the essential words to describe the &lt;em&gt;Bonus Stage&lt;/em&gt; event.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s Sunday 15 April, the last day of the London Games Week.&lt;br /&gt;
+I take the bus, heading to Dalston where the Loading bar is full of shiny games to try.
+I&amp;rsquo;m just arrived and, after opening the door, I discover a real paradise.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>QEMU: quick guide to a powerful virtualization tool</title>
