@@ -8,10 +8,23 @@
     <language>en-us</language>
     <managingEditor>davcri91@gmail.com (Davide Cristini)</managingEditor>
     <webMaster>davcri91@gmail.com (Davide Cristini)</webMaster>
-    <lastBuildDate>Tue, 01 May 2018 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 23 May 2018 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://davcri.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to fix Arcanist after upgrading to Ubuntu 18.04</title>
+      <link>https://davcri.github.io/posts/ubuntu-upgrade-arcanist-fix/how-to-fix-arcanist-not-working/</link>
+      <pubDate>Wed, 23 May 2018 00:00:00 +0100</pubDate>
+      <author>davcri91@gmail.com (Davide Cristini)</author>
+      <guid>https://davcri.github.io/posts/ubuntu-upgrade-arcanist-fix/how-to-fix-arcanist-not-working/</guid>
+      <description>&lt;p&gt;After upgrading to &lt;em&gt;Ubuntu 18.04 LTS&lt;/em&gt;, I encountered this issue with &lt;code&gt;arc&lt;/code&gt;:
+&amp;ldquo;PHP CONFIGURATION ERROR&amp;rdquo;.
+Here it is a really quick fix.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Five amazing indie videogames @BonusStage 2018</title>
