@@ -6,6 +6,10 @@
     display: block;
 } */
 
+.card {
+    width: 100%;
+}
+
 .custom-card {
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
