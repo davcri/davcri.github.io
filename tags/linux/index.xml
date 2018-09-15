@@ -8,7 +8,7 @@
     <language>en-us</language>
     <managingEditor>davcri91@gmail.com (Davide Cristini)</managingEditor>
     <webMaster>davcri91@gmail.com (Davide Cristini)</webMaster>
-    <lastBuildDate>Fri, 07 Sep 2018 14:25:12 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 15 Sep 2018 10:25:00 +0100</lastBuildDate>
     
 	<atom:link href="https://davcri.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,7 +16,7 @@
     <item>
       <title>First steps with CS50 - How to install Love2D on Linux</title>
       <link>https://davcri.github.io/posts/cs50-install-love2d-on-arch-linux/</link>
-      <pubDate>Fri, 07 Sep 2018 14:25:12 +0100</pubDate>
+      <pubDate>Sat, 15 Sep 2018 10:25:00 +0100</pubDate>
       <author>davcri91@gmail.com (Davide Cristini)</author>
       <guid>https://davcri.github.io/posts/cs50-install-love2d-on-arch-linux/</guid>
       <description>&lt;p&gt;Harvard&amp;rsquo;s CS50 created the &lt;em&gt;Introduction to videogame development&lt;/em&gt; course that I started

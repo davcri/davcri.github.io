@@ -28,3 +28,7 @@
 #post-content h2, #post-content h3 {
     margin-top: 1.2em;
 }
+
+pre {
+    padding: 1.0em;
+}
