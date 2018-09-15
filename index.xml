@@ -8,10 +8,27 @@
     <language>en-us</language>
     <managingEditor>davcri91@gmail.com (Davide Cristini)</managingEditor>
     <webMaster>davcri91@gmail.com (Davide Cristini)</webMaster>
-    <lastBuildDate>Wed, 23 May 2018 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 07 Sep 2018 14:25:12 +0100</lastBuildDate>
     
 	<atom:link href="https://davcri.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>First steps with CS50 - How to install Love2D on Linux</title>
+      <link>https://davcri.github.io/posts/cs50-install-love2d-on-arch-linux/</link>
+      <pubDate>Fri, 07 Sep 2018 14:25:12 +0100</pubDate>
+      <author>davcri91@gmail.com (Davide Cristini)</author>
+      <guid>https://davcri.github.io/posts/cs50-install-love2d-on-arch-linux/</guid>
+      <description>&lt;p&gt;Harvard&amp;rsquo;s CS50 created the &lt;em&gt;Introduction to videogame development&lt;/em&gt; course that I started
+following with the Italian &lt;a href=&#34;https://github.com/GameLoop-it/cs50_course_materials&#34;&gt;Gameloop.it&lt;/a&gt; community.&lt;/p&gt;
+
+&lt;p&gt;This course requires students to edit some pre-made game projects that were originally made with
+&lt;em&gt;Love 0.10&lt;/em&gt;. Unfortunately they are not compatible with the newest Love2D version that
+you find in most Linux distros (&lt;em&gt;v1.11&lt;/em&gt; at the time of writing), but these simple guide will
+help you fixing this issue.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>How to fix Arcanist after upgrading to Ubuntu 18.04</title>
