@@ -77,7 +77,7 @@ configuration, but you …" />
 
             
 <div class="card my-3">
-    <div class="card-body">
+    <div id="post-container" class="card-body">
         <h2 class="card-title"> QEMU: quick guide to a powerful virtualization tool </h2>
         <div class="row">
             <div class="col">
@@ -85,11 +85,9 @@ configuration, but you …" />
                     4min read <br>
 
                     
-                      <span class="badge badge-pill badge-primary">qemu</span>
+                      <span class="badge badge-pill badge-primary">Tutorial</span>
                     
-                      <span class="badge badge-pill badge-primary">tutorial</span>
-                    
-                      <span class="badge badge-pill badge-primary">linux</span>
+                      <span class="badge badge-pill badge-primary">Linux</span>
                     
                 </p>
             </div>
@@ -100,18 +98,16 @@ configuration, but you …" />
             </div>
         </div>
         
-        <div class="text-center">
-            <img class="img-fluid" src="/img/posts/thumbs/qemu.png" alt="Qemu thumbnail" style="max-height: 20em;">
+        <div id="post-header" class="text-center">
+            <img class="img-fluid rounded" src="/img/posts/thumbs/qemu.png" alt="Qemu thumbnail" style="max-height: 20em;">
         </div>
         
         <hr>
-        <div id="post-content" class="card-text">
+        <div id="post-body" class="card-text">
             <p>Sometimes you want to try a new operating system or particular software
 configuration, but you don&rsquo;t want to touch your precious PC, risking
 to make your main production system unbootable.
 In these cases, software virtualization is your friend.</p>
-
-<p></p>
 
 <p><strong>QEMU</strong> is a great open source virtualization tool
 available exclusively on Linux based systems. Compared to <em>Virtualbox</em>, it is better
@@ -169,13 +165,12 @@ However let&rsquo;s focus on getting things done, so grab the terminal and type:
 of RAM and with KVM enabled (it speeds up the virtualization, a lot!).</p>
 
 
-<div class="text-center">
-    <figure >
+<div class="text-center my-4">
+    <figure class="figure my-0">
         
         <img src="./qemu-ubuntu.png" 
-             alt="Ubuntu as a guest"
-             class="figure-img img-fluid rounded"
-        />
+            alt="Ubuntu as a guest"
+            class=" figure-img img-fluid rounded" />
         
         
 
@@ -208,8 +203,8 @@ guest OS, you will lose all your changes.</p>
 to save them somewhere. To tell QEMU where to persist the data, we can use a so called
 <em>virtual disk image</em>. Let&rsquo;s create one:</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># create a file &#34;disk_image&#34; with format qcow2 and 40GB of max space
-</span><span style="color:#75715e"></span>qemu-img create -f qcow2 disk_image 40G</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># create a file &#34;disk_image&#34; with format qcow2 and 40GB of max space</span>
+qemu-img create -f qcow2 disk_image 40G</code></pre></div>
 
 <p>This command will create a virtual disk file called <code>disk_image</code>: the parameters
 specifies a maximum size of 40GB and the <a href="https://en.wikipedia.org/wiki/Qcow">qcow2</a>
@@ -218,12 +213,11 @@ when the space will be actually used by the virtual OS.
 Initially it will take only few KBs:</p>
 
 
-<div class="text-center">
-    <figure >
+<div class="text-center my-4">
+    <figure class="figure my-0">
         
         <img src="./image-size.png" 
-             class="figure-img img-fluid rounded"
-        />
+            class=" figure-img img-fluid rounded" />
         
         
     </figure>
@@ -284,13 +278,12 @@ So for Antergos there is this AUR package:
 <h2 id="running-examples">Running examples</h2>
 
 <p>
-<div class="text-center">
-    <figure >
+<div class="text-center my-4">
+    <figure class="figure my-0">
         
         <img src="./android6.png" 
-             alt="Android on qemu"
-             class="figure-img img-fluid rounded"
-        />
+            alt="Android on qemu"
+            class=" figure-img img-fluid rounded" />
         
         
 
@@ -311,13 +304,12 @@ So for Antergos there is this AUR package:
 
 
 
-<div class="text-center">
-    <figure >
+<div class="text-center my-4">
+    <figure class="figure my-0">
         
         <img src="./antergos.png" 
-             alt="Antergos on qemu"
-             class="figure-img img-fluid rounded"
-        />
+            alt="Antergos on qemu"
+            class=" figure-img img-fluid rounded" />
         
         
 
@@ -338,13 +330,12 @@ So for Antergos there is this AUR package:
 
 
 
-<div class="text-center">
-    <figure >
+<div class="text-center my-4">
+    <figure class="figure my-0">
         
         <img src="./windows7.png" 
-             alt="Windows 7 on qemu"
-             class="figure-img img-fluid rounded"
-        />
+            alt="Windows 7 on qemu"
+            class=" figure-img img-fluid rounded" />
         
         
 
@@ -398,7 +389,7 @@ So for Antergos there is this AUR package:
 
 
 
-            <div class="bg-dark text-white px-3 py-3">
+            <div id="footer" class="bg-dark text-white px-3 py-3">
 
     <div class="row">
         <div class="col-sm">

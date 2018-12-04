@@ -8,10 +8,20 @@
     <language>en-us</language>
     <managingEditor>davcri91@gmail.com (Davide Cristini)</managingEditor>
     <webMaster>davcri91@gmail.com (Davide Cristini)</webMaster>
-    <lastBuildDate>Thu, 08 Nov 2018 12:00:59 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Dec 2018 16:23:44 +0000</lastBuildDate>
     
 	<atom:link href="https://davcri.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Programmatically create an AtlasTexture in Godot</title>
+      <link>https://davcri.github.io/posts/programmatically-create-atlastexture-with-gdscript/</link>
+      <pubDate>Tue, 04 Dec 2018 16:23:44 +0000</pubDate>
+      <author>davcri91@gmail.com (Davide Cristini)</author>
+      <guid>https://davcri.github.io/posts/programmatically-create-atlastexture-with-gdscript/</guid>
+      <description>I&amp;rsquo;m currently working on a card game tutorial (that will soon be open sourced) and I needed to create an AtlasTexture resource programmatically, a task that I didn&amp;rsquo;t find documented anywhere in the Godot documentation so I thought about creating this short post to describe how to do it.
+How to At first I tried to create an AtlasTexture with var t = AtlasTexture() but this was not working at all:</description>
+    </item>
     
     <item>
       <title>Implicit type conversion in GDScript - When math gets in the way</title>
@@ -29,9 +39,7 @@ needed vectors with these kind of random values:&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Essentially I wanted to generate random values of &lt;code&gt;1&lt;/code&gt;, &lt;code&gt;0&lt;/code&gt; or &lt;code&gt;-1&lt;/code&gt; and then use
-them as Vector2 coordinates.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+them as Vector2 coordinates.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -46,9 +54,7 @@ following with the Italian &lt;a href=&#34;https://github.com/GameLoop-it/cs50_c
 &lt;p&gt;This course requires students to edit some pre-made game projects that were originally made with
 &lt;em&gt;Love 0.10&lt;/em&gt;. Unfortunately they are not compatible with the newest Love2D version that
 you find in most Linux distros (&lt;em&gt;v1.11&lt;/em&gt; at the time of writing), but these simple guide will
-help you fixing this issue.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+help you fixing this issue.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -59,9 +65,7 @@ help you fixing this issue.&lt;/p&gt;
       <guid>https://davcri.github.io/posts/ubuntu-upgrade-arcanist-fix/how-to-fix-arcanist-not-working/</guid>
       <description>&lt;p&gt;After upgrading to &lt;em&gt;Ubuntu 18.04 LTS&lt;/em&gt;, I encountered this issue with &lt;code&gt;arc&lt;/code&gt;:
 &amp;ldquo;PHP CONFIGURATION ERROR&amp;rdquo;.
-Here it is a really quick fix.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+Here it is a really quick fix.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -75,9 +79,7 @@ These are the essential words to describe the &lt;em&gt;Bonus Stage&lt;/em&gt; e
 
 &lt;p&gt;It&amp;rsquo;s Sunday 15 April, the last day of the London Games Week.&lt;br /&gt;
 I take the bus, heading to Dalston where the Loading bar is full of shiny games to try.
-I&amp;rsquo;m just arrived and, after opening the door, I discover a real paradise.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+I&amp;rsquo;m just arrived and, after opening the door, I discover a real paradise.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -89,9 +91,7 @@ I&amp;rsquo;m just arrived and, after opening the door, I discover a real paradi
       <description>&lt;p&gt;Sometimes you want to try a new operating system or particular software
 configuration, but you don&amp;rsquo;t want to touch your precious PC, risking
 to make your main production system unbootable.
-In these cases, software virtualization is your friend.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+In these cases, software virtualization is your friend.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -101,8 +101,7 @@ In these cases, software virtualization is your friend.&lt;/p&gt;
       <author>davcri91@gmail.com (Davide Cristini)</author>
       <guid>https://davcri.github.io/posts/software-projects-college/</guid>
       <description>&lt;p&gt;During my time in Computer Engineering college in Italy, I developed
-various kind of software projects as an assignment for the courses.
-&lt;/p&gt;</description>
+various kind of software projects as an assignment for the courses.&lt;/p&gt;</description>
     </item>
     
     <item>

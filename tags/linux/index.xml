@@ -25,9 +25,7 @@ following with the Italian &lt;a href=&#34;https://github.com/GameLoop-it/cs50_c
 &lt;p&gt;This course requires students to edit some pre-made game projects that were originally made with
 &lt;em&gt;Love 0.10&lt;/em&gt;. Unfortunately they are not compatible with the newest Love2D version that
 you find in most Linux distros (&lt;em&gt;v1.11&lt;/em&gt; at the time of writing), but these simple guide will
-help you fixing this issue.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+help you fixing this issue.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -38,9 +36,7 @@ help you fixing this issue.&lt;/p&gt;
       <guid>https://davcri.github.io/posts/ubuntu-upgrade-arcanist-fix/how-to-fix-arcanist-not-working/</guid>
       <description>&lt;p&gt;After upgrading to &lt;em&gt;Ubuntu 18.04 LTS&lt;/em&gt;, I encountered this issue with &lt;code&gt;arc&lt;/code&gt;:
 &amp;ldquo;PHP CONFIGURATION ERROR&amp;rdquo;.
-Here it is a really quick fix.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+Here it is a really quick fix.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -52,9 +48,7 @@ Here it is a really quick fix.&lt;/p&gt;
       <description>&lt;p&gt;Sometimes you want to try a new operating system or particular software
 configuration, but you don&amp;rsquo;t want to touch your precious PC, risking
 to make your main production system unbootable.
-In these cases, software virtualization is your friend.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+In these cases, software virtualization is your friend.&lt;/p&gt;</description>
     </item>
     
   </channel>

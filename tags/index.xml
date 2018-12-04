@@ -8,44 +8,35 @@
     <language>en-us</language>
     <managingEditor>davcri91@gmail.com (Davide Cristini)</managingEditor>
     <webMaster>davcri91@gmail.com (Davide Cristini)</webMaster>
-    <lastBuildDate>Thu, 08 Nov 2018 12:00:59 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Dec 2018 16:23:44 +0000</lastBuildDate>
     
 	<atom:link href="https://davcri.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Gamedev</title>
-      <link>https://davcri.github.io/tags/gamedev/</link>
-      <pubDate>Thu, 08 Nov 2018 12:00:59 +0000</pubDate>
+      <title>Game Dev</title>
+      <link>https://davcri.github.io/tags/game-dev/</link>
+      <pubDate>Tue, 04 Dec 2018 16:23:44 +0000</pubDate>
       <author>davcri91@gmail.com (Davide Cristini)</author>
-      <guid>https://davcri.github.io/tags/gamedev/</guid>
+      <guid>https://davcri.github.io/tags/game-dev/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Godot Engine</title>
       <link>https://davcri.github.io/tags/godot-engine/</link>
-      <pubDate>Thu, 08 Nov 2018 12:00:59 +0000</pubDate>
+      <pubDate>Tue, 04 Dec 2018 16:23:44 +0000</pubDate>
       <author>davcri91@gmail.com (Davide Cristini)</author>
       <guid>https://davcri.github.io/tags/godot-engine/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Indie</title>
-      <link>https://davcri.github.io/tags/indie/</link>
+      <title>Indie Game</title>
+      <link>https://davcri.github.io/tags/indie-game/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0100</pubDate>
       <author>davcri91@gmail.com (Davide Cristini)</author>
-      <guid>https://davcri.github.io/tags/indie/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Issues</title>
-      <link>https://davcri.github.io/tags/issues/</link>
-      <pubDate>Wed, 23 May 2018 00:00:00 +0100</pubDate>
-      <author>davcri91@gmail.com (Davide Cristini)</author>
-      <guid>https://davcri.github.io/tags/issues/</guid>
+      <guid>https://davcri.github.io/tags/indie-game/</guid>
       <description></description>
     </item>
     
@@ -68,38 +59,20 @@
     </item>
     
     <item>
-      <title>Qemu</title>
-      <link>https://davcri.github.io/tags/qemu/</link>
-      <pubDate>Sat, 10 Mar 2018 10:20:00 +0100</pubDate>
-      <author>davcri91@gmail.com (Davide Cristini)</author>
-      <guid>https://davcri.github.io/tags/qemu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Software</title>
-      <link>https://davcri.github.io/tags/software/</link>
+      <title>Projects</title>
+      <link>https://davcri.github.io/tags/projects/</link>
       <pubDate>Sat, 20 Jan 2018 17:00:00 +0100</pubDate>
       <author>davcri91@gmail.com (Davide Cristini)</author>
-      <guid>https://davcri.github.io/tags/software/</guid>
+      <guid>https://davcri.github.io/tags/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tutorial</title>
       <link>https://davcri.github.io/tags/tutorial/</link>
-      <pubDate>Sat, 15 Sep 2018 10:25:00 +0100</pubDate>
+      <pubDate>Tue, 04 Dec 2018 16:23:44 +0000</pubDate>
       <author>davcri91@gmail.com (Davide Cristini)</author>
       <guid>https://davcri.github.io/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ubuntu</title>
-      <link>https://davcri.github.io/tags/ubuntu/</link>
-      <pubDate>Wed, 23 May 2018 00:00:00 +0100</pubDate>
-      <author>davcri91@gmail.com (Davide Cristini)</author>
-      <guid>https://davcri.github.io/tags/ubuntu/</guid>
       <description></description>
     </item>
     
