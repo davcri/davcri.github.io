@@ -19,8 +19,8 @@
       <pubDate>Tue, 04 Dec 2018 16:23:44 +0000</pubDate>
       <author>davcri91@gmail.com (Davide Cristini)</author>
       <guid>https://davcri.github.io/posts/programmatically-create-atlastexture-with-gdscript/</guid>
-      <description>I&amp;rsquo;m currently working on a card game tutorial (that will soon be open sourced) and I needed to create an AtlasTexture resource programmatically, a task that I didn&amp;rsquo;t find documented anywhere in the Godot documentation so I thought about creating this short post to describe how to do it.
-How to At first I tried to create an AtlasTexture with var t = AtlasTexture() but this was not working at all:</description>
+      <description>I&amp;rsquo;m currently working on a card game tutorial (that will soon be open sourced) and I needed to create an AtlasTexture resource programmatically, a task that I didn&amp;rsquo;t find documented anywhere in the Godot reference so I thought about creating this short post to describe how to do it.
+What I tried At first I tried to create an AtlasTexture with var t = AtlasTexture() but this was not working at all:</description>
     </item>
     
     <item>

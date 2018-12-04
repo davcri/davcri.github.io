@@ -111,13 +111,15 @@ I&rsquo;m currently working on a card game tutorial (that will soon be open sour
             
 
 <p>I&rsquo;m currently working on a card game tutorial (that will soon be open sourced) and I needed to create an <code>AtlasTexture</code> resource
-programmatically, a task that I didn&rsquo;t find documented anywhere in the Godot documentation so I thought about creating
+programmatically, a task that I didn&rsquo;t find documented anywhere in the Godot reference so I thought about creating
 this short post to describe how to do it.</p>
 
-<h2 id="how-to">How to</h2>
+<h2 id="what-i-tried">What I tried</h2>
 
 <p>At first I tried to create an AtlasTexture with <code>var t = AtlasTexture()</code> but this was not working at all:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">Invalid call. Nonexistent <span style="color:#66d9ef">function</span> <span style="color:#e6db74">&#39;AtlasTexture&#39;</span> in base <span style="color:#e6db74">&#39;TextureButton (Card.gd)&#39;</span></code></pre></div>
+<h2 id="the-right-way-of-doing-it">The right way  of doing it</h2>
+
 <p>So I went to the Godot Discord channel and I was told to use</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">var t <span style="color:#f92672">=</span> AtlasTexture<span style="color:#f92672">.</span>new()</code></pre></div>
 <p>And <strong>this worked</strong>, but I
