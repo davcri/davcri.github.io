@@ -8,10 +8,20 @@
     <language>en-us</language>
     <managingEditor>davcri91@gmail.com (Davide Cristini)</managingEditor>
     <webMaster>davcri91@gmail.com (Davide Cristini)</webMaster>
-    <lastBuildDate>Tue, 04 Dec 2018 16:23:44 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Dec 2018 20:00:59 +0000</lastBuildDate>
     
 	<atom:link href="https://davcri.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to reparent nodes with GDSCript</title>
+      <link>https://davcri.github.io/posts/godot-reparent-node/</link>
+      <pubDate>Sun, 16 Dec 2018 20:00:59 +0000</pubDate>
+      <author>davcri91@gmail.com (Davide Cristini)</author>
+      <guid>https://davcri.github.io/posts/godot-reparent-node/</guid>
+      <description>&lt;p&gt;While working on a card game with Godot (the code will soon be open sourced), I
+had to reparent a node from one parent to another. Here it is two simple ways to do it.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Programmatically create an AtlasTexture in Godot</title>
