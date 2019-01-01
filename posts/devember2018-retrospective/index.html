@@ -15,17 +15,21 @@
         <meta property="og:site_name" content="Crystal Bit">
 
         
-<title> Implicit type conversion in GDScript - When math gets in the way </title>
+<title> Devember 2018 Retrospective </title>
 
       
         
-<meta name="description" content="While coding a simple AI for my (italian) Godot video tutorial series, I
-needed vectors with these …" />
-<meta property="og:title" content="Implicit type conversion in GDScript - When math gets in the way" />
-<meta property="og:image" itemprop="image" content="https://davcri.github.io/img/posts/thumbs/gdscript-implicit-type-conversion.png" />
-<meta property="og:url" content="https://davcri.github.io/posts/gdscript-implicit-type-conversion/" />
-<meta property="og:description" content="While coding a simple AI for my (italian) Godot video tutorial series, I
-needed vectors with these …" />
+<meta name="description" content="
+
+During December I took a challenge: code 1 hour every day. I decide to work on a
+Triple Triad …" />
+<meta property="og:title" content="Devember 2018 Retrospective" />
+<meta property="og:image" itemprop="image" content="https://davcri.github.io/img/posts/thumbs/devember18-retrospective.png" />
+<meta property="og:url" content="https://davcri.github.io/posts/devember2018-retrospective/" />
+<meta property="og:description" content="
+
+During December I took a challenge: code 1 hour every day. I decide to work on a
+Triple Triad …" />
 <meta property="og:type" content="article" />
 
 
@@ -78,55 +82,115 @@ needed vectors with these …" />
             
 <div class="card my-3">
     <div id="post-container" class="card-body">
-        <h2 class="card-title"> Implicit type conversion in GDScript - When math gets in the way </h2>
+        <h2 class="card-title"> Devember 2018 Retrospective </h2>
         <div class="row">
             <div class="col">
                 <p class="text-muted">
-                    2min read <br>
+                    3min read <br>
 
                     
-                      <span class="badge badge-pill badge-primary">Game Dev</span>
-                    
                       <span class="badge badge-pill badge-primary">Godot Engine</span>
+                    
+                      <span class="badge badge-pill badge-primary">Game Dev</span>
                     
                 </p>
             </div>
             <div class="col">
                 <p class="text-right text-muted">
-                    November 8, 2018
+                    January 1, 2019
                 </p>
             </div>
         </div>
         
         
         <div id="post-header" class="text-center">
-            <img class="img-fluid rounded" src="/img/posts/thumbs/gdscript-implicit-type-conversion.png" alt="Formula thumbnail" style="max-height: 20em;">
+            <img class="img-fluid rounded" src="/img/posts/thumbs/devember18-retrospective.png" alt="Devember 2018 Devember retrospective thumbnail" style="max-height: 20em;">
         </div>
         
         <hr>
         
         <div id="post-body" class="card-text">
-            <p>While coding a simple AI for my (<em>italian</em>) <a href="https://youtu.be/AY1zuH2mHQ0">Godot video tutorial series</a>, I
-needed vectors with these kind of random values:</p>
+            
+
+<p>During December I took a challenge: code 1 hour every day. I decide to work on a
+Triple Triad clone (Final Fantasy VIII card game) made with the Godot Engine.</p>
+
+<h2 id="devember">Devember?</h2>
+
+<p>If you want to know more about Devember, you can read about it
+<a href="https://devember.org/whatisit/">here</a>.</p>
+
+<h2 id="making-triple-triad-with-godot-engine">Making Triple Triad with Godot Engine</h2>
+
+
+<div class="text-center my-4">
+    <figure class="figure my-0">
+        
+        <img src="./triple-triad.png" 
+            alt="Triple Triad inside Godot editor :D"
+            class=" figure-img img-fluid rounded" />
+        
+        
+
+        <figcaption class="figure-caption">
+            
+
+            
+            <p>
+                Triple Triad inside Godot editor :D
+                
+                
+                
+            </p> 
+        </figcaption>
+        
+    </figure>
+</div>
+
+
+
+<p><strong>Final Fantasy VIII</strong> is one of my favourite videogames and I wanted to create a code implementation
+for the card mini-game called Triple Triad. It was a good way to study game programming topics such as:</p>
 
 <ul>
-<li><code>Vector2(0, 1)</code></li>
-<li><code>Vector2(-1, 1)</code></li>
-<li>&hellip;</li>
+<li>Turn system</li>
+<li>Simple Artificial Intelligence</li>
+<li>Selection states</li>
+<li>Data Oriented Design</li>
+<li>JSON data handling</li>
+<li>Programmatically create a card object with attributes</li>
+<li>Programmatically create gradients</li>
+<li>Implement game rules</li>
 </ul>
 
-<p>Essentially I wanted to generate random values of <code>1</code>, <code>0</code> or <code>-1</code> and then use
-them as Vector2 coordinates.</p>
+<p>If you want to know more about this I&rsquo;m going to release the project as open source in the next days, so keep an eye on my blog
+or my Twitter profile.</p>
 
-<p>There are multiple (simple) ways of doing this, but the first that came to my mind was
-a slightly convoluted mathematical approach:</p>
+<p>In the meantime you can read something that I wrote during my Devember:</p>
+
+<ul>
+<li><a href="/posts/godot-reparent-node/">Godot how to reparent a node</a></li>
+<li><a href="/posts/programmatically-create-atlastexture-with-gdscript/">Programmtically create an AtlasTexture with GDScript</a></li>
+</ul>
+
+<h2 id="the-outcome">The outcome</h2>
+
+<p>Participating to Devember I had a lots of upsides:</p>
+
+<ol>
+<li>I worked consistently each day (good habit)</li>
+<li>I almost finished a project that I&rsquo;ll use as a base for new tutorials</li>
+<li>I gained dozens of followers by posting a tweet every day</li>
+<li>I had my most productive month in terms of blog posts created (just 2, yep)</li>
+<li>I increased my self-confidence</li>
+</ol>
 
 
 <div class="text-center my-4">
     <figure class="figure my-0">
         
-        <img src="./formula.jpg" 
-            alt="I&#39;m lazy and I prefer using pen and paper instead of MathJax, yes."
+        <img src="./twitter-results.png" 
+            alt="Twitter analytics skyrocketed during Devember"
             class=" figure-img img-fluid rounded" />
         
         
@@ -136,7 +200,7 @@ a slightly convoluted mathematical approach:</p>
 
             
             <p>
-                I&#39;m lazy and I prefer using pen and paper instead of MathJax, yes.
+                Twitter analytics skyrocketed during Devember
                 
                 
                 
@@ -148,96 +212,41 @@ a slightly convoluted mathematical approach:</p>
 
 
 
-<p>that translated into <em>GDScript</em> code is somethink like:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">pow<span style="color:#f92672">(</span>-1, randi<span style="color:#f92672">()</span> % <span style="color:#ae81ff">2</span><span style="color:#f92672">)</span> * randi<span style="color:#f92672">()</span> % <span style="color:#ae81ff">2</span></code></pre></div>
-<p>Even if mathematically correct, this expression does not work as expected.
-When executing it, Godot complains about a bad float argument for
-the modulo operator <code>%</code>.</p>
+<h2 id="being-consistent-is-key">Being consistent is key</h2>
 
+<p>I really enjoyed Devember because <strong>it gave me two essential things for success</strong>:</p>
 
-<div class="text-center my-4">
-    <figure class="figure my-0">
-        
-        <img src="./error-screen.png" 
-            alt="Error screen"
-            class=" figure-img img-fluid rounded" />
-        
-        
+<ol>
+<li>good habit</li>
+<li>right mindset</li>
+</ol>
 
-        <figcaption class="figure-caption">
-            
+<p>The challenge is easy: code 1h each day (<em>habit</em>), however I often ended up working more because
+I wanted to make that day count and I was determined to get the most out of it (<em>mindset</em>).</p>
 
-            
-            <p>
-                Error screen
-                
-                
-                
-            </p> 
-        </figcaption>
-        
-    </figure>
-</div>
+<p>If you have a small project that you want to work on during 2019, then I
+recommend doing something similar: set a goal, then establish the habit to work on it everyday. You will make a lot of progress, I&rsquo;m sure about this.</p>
 
+<h2 id="more-on-time-management-and-productivity">More on time management and productivity</h2>
 
+<p>If you want to dive a little bit more on time management techniques
+then take a look at:</p>
 
-<p>The problem is that <code>pow()</code> returns a <strong>float</strong> number and I was not taking this
-into account (more on this later);</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=mIPmjnsCPR4">&ldquo;Don&rsquo;t break the chain&rdquo;</a>: a GDC talk given by <em>Jason Rohrer</em> who gives insights
+about how he optimized his workflow</li>
+<li><a href="https://en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro tecnique</a>: a great time management
+tecnique to get the most out of your working hours</li>
+</ul>
 
+<p>Make sure to check these things and start working on your projects! Let me know what you think and if you use
+other strategies to keep motivation and focus.</p>
 
-<div class="text-center my-4">
-    <figure class="figure my-0">
-        
-        <img src="./formula-types.png" 
-            alt="Types highlighted"
-            class=" figure-img img-fluid rounded" />
-        
-        
-
-        <figcaption class="figure-caption">
-            
-
-            
-            <p>
-                Types highlighted
-                
-                
-                
-            </p> 
-        </figcaption>
-        
-    </figure>
-</div>
-
-
-
-<p>this means that <code>pow(-1, randi() % 2) * randi()</code> is a multiplication of a float
-and an integer.<br />
-In this case GDScript will implicitly convert the integer to float and thus the
-result of the multiplication will be a float value, and here it is the problem:
-this float value will be used as operand for the modulo operator and this is
-not a valid operation.</p>
-
-<p>I did not see this error at first because I was thinking in mathematical terms
-and <code>(-1)^n</code>, for n positive natural number, is always an integer number.</p>
-
-<h2 id="fixing-the-expression">Fixing the expression</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># fixed</span>
-pow<span style="color:#f92672">(</span>-1, randi<span style="color:#f92672">()</span> % <span style="color:#ae81ff">2</span><span style="color:#f92672">)</span> * <span style="color:#f92672">(</span>randi<span style="color:#f92672">()</span> % <span style="color:#ae81ff">2</span><span style="color:#f92672">)</span>
-
-<span style="color:#75715e"># old</span> 
-pow<span style="color:#f92672">(</span>-1, randi<span style="color:#f92672">()</span> % <span style="color:#ae81ff">2</span><span style="color:#f92672">)</span> * randi<span style="color:#f92672">()</span> % <span style="color:#ae81ff">2</span></code></pre></div>
-<p>Just use the parenthesis to give precedence to the ending <code>randi() % 2</code> and the problem
-is solved.</p>
-
-<p>It&rsquo;s not a super interesting read, but I think that it&rsquo;s
-always good to remember that the math that we use in code development is
-really different from the math that we use in other contexts.</p>
         </div>
         
         <div class="share">
             <h4> Share </h4>
-            <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fdavcri.github.io%2fposts%2fgdscript-implicit-type-conversion%2f"> Share on Twitter </a>
+            <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fdavcri.github.io%2fposts%2fdevember2018-retrospective%2f"> Share on Twitter </a>
         </div>
     </div>
 </div>

@@ -8,10 +8,21 @@
     <language>en-us</language>
     <managingEditor>davcri91@gmail.com (Davide Cristini)</managingEditor>
     <webMaster>davcri91@gmail.com (Davide Cristini)</webMaster>
-    <lastBuildDate>Sun, 16 Dec 2018 20:00:59 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jan 2019 10:25:00 +0100</lastBuildDate>
     
 	<atom:link href="https://davcri.github.io/tags/game-dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Devember 2018 Retrospective</title>
+      <link>https://davcri.github.io/posts/devember2018-retrospective/</link>
+      <pubDate>Tue, 01 Jan 2019 10:25:00 +0100</pubDate>
+      <author>davcri91@gmail.com (Davide Cristini)</author>
+      <guid>https://davcri.github.io/posts/devember2018-retrospective/</guid>
+      <description>During December I took a challenge: code 1 hour every day. I decide to work on a Triple Triad clone (Final Fantasy VIII card game) made with the Godot Engine.
+Devember? If you want to know more about Devember, you can read about it here.
+Making Triple Triad with Godot Engine  Triple Triad inside Godot editor :D    Final Fantasy VIII is one of my favourite videogames and I wanted to create a code implementation for the card mini-game called Triple Triad.</description>
+    </item>
     
     <item>
       <title>How to reparent nodes with GDScript</title>
