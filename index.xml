@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Crystal Bit</title>
+    <title>davcri</title>
     <link>https://davcri.github.io/</link>
-    <description>Recent content on Crystal Bit</description>
+    <description>Recent content on davcri</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>davcri91@gmail.com (Davide Cristini)</managingEditor>
@@ -19,9 +19,8 @@
       <pubDate>Tue, 01 Jan 2019 10:25:00 +0100</pubDate>
       <author>davcri91@gmail.com (Davide Cristini)</author>
       <guid>https://davcri.github.io/posts/devember2018-retrospective/</guid>
-      <description>During December I took a challenge: code 1 hour every day. I decide to work on a Triple Triad clone (Final Fantasy VIII card game) made with the Godot Engine.
-Devember? If you want to know more about Devember, you can read about it here.
-Making Triple Triad with Godot Engine  Triple Triad inside Godot editor :D    Final Fantasy VIII is one of my favourite videogames and I wanted to create a code implementation for the card mini-game called Triple Triad.</description>
+      <description>&lt;p&gt;During December I took a challenge: code 1 hour every day. I decide to work on a
+Triple Triad clone (Final Fantasy VIII card game) made with the Godot Engine.&lt;/p&gt;</description>
     </item>
     
     <item>
