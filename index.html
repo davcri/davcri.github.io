@@ -35,6 +35,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/main.css">
+        
+        
     </head>
 
     <body>
@@ -44,6 +46,9 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
         <script src="https://use.fontawesome.com/03364e4af9.js"></script>
         
+    <script src="/js/enable-tooltip.js"></script>
+
+
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <a class="navbar-brand" href=" https://davcri.github.io/">
         <img src="/img/logo/logo-5.png" width="32" height="32" alt="">
@@ -73,13 +78,9 @@
 </nav>
 
 
-        <div class="container">
-            
-    <script src="/js/enable-tooltip.js"></script>
-
-
-            
-    <div class="col-md-12 my-3">
+        
+    <div class="container">
+        <div class="col-md-12 my-3">
     <div class="px-2 py-3 card bg-dark text-white text-center">
 
         <div class="row">
@@ -117,76 +118,76 @@
 
 
 
-    
-        <div class="row">
-            <div class="card card-shadow-hover order-0">
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a id="cardLink" href="/posts/devember2018-retrospective/">
-                            Devember 2018 Retrospective
-                        </a>
-                    </h4>
-                    <p class="card-text"> <p>During December I took a challenge: code 1 hour every day. I decide to work on a
+        
+            <div class="row">
+                <div class="card card-shadow-hover order-0">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a id="cardLink" href="/posts/devember2018-retrospective/">
+                                Devember 2018 Retrospective
+                            </a>
+                        </h4>
+                        <p class="card-text"> <p>During December I took a challenge: code 1 hour every day. I decide to work on a
 Triple Triad clone (Final Fantasy VIII card game) made with the Godot Engine.</p> </p>
-                    <p class="card-text">
-                        <small class="text-muted">
-                            <i class="far fa-calendar-alt"></i> January 1, 2019
-                        </small>
-                    </p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <i class="far fa-calendar-alt"></i> January 1, 2019
+                            </small>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
-    
-        <div class="row">
-            <div class="card card-shadow-hover order-1">
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a id="cardLink" href="/posts/godot-reparent-node/">
-                            How to reparent nodes with GDScript
-                        </a>
-                    </h4>
-                    <p class="card-text"> <p>While working on a card game with Godot (the code will soon be open sourced), I
+            <br>
+        
+            <div class="row">
+                <div class="card card-shadow-hover order-1">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a id="cardLink" href="/posts/godot-reparent-node/">
+                                How to reparent nodes with GDScript
+                            </a>
+                        </h4>
+                        <p class="card-text"> <p>While working on a card game with Godot (the code will soon be open sourced), I
 had to reparent a node from one parent to another. Here it is two simple ways to do it.</p> </p>
-                    <p class="card-text">
-                        <small class="text-muted">
-                            <i class="far fa-calendar-alt"></i> December 16, 2018
-                        </small>
-                    </p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <i class="far fa-calendar-alt"></i> December 16, 2018
+                            </small>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
-    
-        <div class="row">
-            <div class="card card-shadow-hover order-2">
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a id="cardLink" href="/posts/programmatically-create-atlastexture-with-gdscript/">
-                            Programmatically create an AtlasTexture in Godot
-                        </a>
-                    </h4>
-                    <p class="card-text"> I&rsquo;m currently working on a card game tutorial (that will soon be open sourced) and I needed to create an AtlasTexture resource programmatically, a task that I didn&rsquo;t find documented anywhere in the Godot reference so I thought about creating this short post to describe how to do it.
+            <br>
+        
+            <div class="row">
+                <div class="card card-shadow-hover order-2">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a id="cardLink" href="/posts/programmatically-create-atlastexture-with-gdscript/">
+                                Programmatically create an AtlasTexture in Godot
+                            </a>
+                        </h4>
+                        <p class="card-text"> I&rsquo;m currently working on a card game tutorial (that will soon be open sourced) and I needed to create an AtlasTexture resource programmatically, a task that I didn&rsquo;t find documented anywhere in the Godot reference so I thought about creating this short post to describe how to do it.
 What I tried At first I tried to create an AtlasTexture with var t = AtlasTexture() but this was not working at all: </p>
-                    <p class="card-text">
-                        <small class="text-muted">
-                            <i class="far fa-calendar-alt"></i> December 4, 2018
-                        </small>
-                    </p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <i class="far fa-calendar-alt"></i> December 4, 2018
+                            </small>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
-    
-        <div class="row">
-            <div class="card card-shadow-hover order-3">
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a id="cardLink" href="/posts/gdscript-implicit-type-conversion/">
-                            Implicit type conversion in GDScript - When math gets in the way
-                        </a>
-                    </h4>
-                    <p class="card-text"> <p>While coding a simple AI for my (<em>italian</em>) <a href="https://youtu.be/AY1zuH2mHQ0">Godot video tutorial series</a>, I
+            <br>
+        
+            <div class="row">
+                <div class="card card-shadow-hover order-3">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a id="cardLink" href="/posts/gdscript-implicit-type-conversion/">
+                                Implicit type conversion in GDScript - When math gets in the way
+                            </a>
+                        </h4>
+                        <p class="card-text"> <p>While coding a simple AI for my (<em>italian</em>) <a href="https://youtu.be/AY1zuH2mHQ0">Godot video tutorial series</a>, I
 needed vectors with these kind of random values:</p>
 
 <ul>
@@ -197,158 +198,156 @@ needed vectors with these kind of random values:</p>
 
 <p>Essentially I wanted to generate random values of <code>1</code>, <code>0</code> or <code>-1</code> and then use
 them as Vector2 coordinates.</p> </p>
-                    <p class="card-text">
-                        <small class="text-muted">
-                            <i class="far fa-calendar-alt"></i> November 8, 2018
-                        </small>
-                    </p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <i class="far fa-calendar-alt"></i> November 8, 2018
+                            </small>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
-    
-        <div class="row">
-            <div class="card card-shadow-hover order-4">
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a id="cardLink" href="/posts/cs50-install-love2d-on-linux/">
-                            First steps with CS50 - How to install Love2D on Linux
-                        </a>
-                    </h4>
-                    <p class="card-text"> <p>Harvard&rsquo;s CS50 created the <em>Introduction to videogame development</em> course that I started
+            <br>
+        
+            <div class="row">
+                <div class="card card-shadow-hover order-4">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a id="cardLink" href="/posts/cs50-install-love2d-on-linux/">
+                                First steps with CS50 - How to install Love2D on Linux
+                            </a>
+                        </h4>
+                        <p class="card-text"> <p>Harvard&rsquo;s CS50 created the <em>Introduction to videogame development</em> course that I started
 following with the Italian <a href="https://github.com/GameLoop-it/cs50_course_materials">Gameloop.it</a> community.</p>
 
 <p>This course requires students to edit some pre-made game projects that were originally made with
 <em>Love 0.10</em>. Unfortunately they are not compatible with the newest Love2D version that
 you find in most Linux distros (<em>v1.11</em> at the time of writing), but these simple guide will
 help you fixing this issue.</p> </p>
-                    <p class="card-text">
-                        <small class="text-muted">
-                            <i class="far fa-calendar-alt"></i> September 15, 2018
-                        </small>
-                    </p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <i class="far fa-calendar-alt"></i> September 15, 2018
+                            </small>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
-    
-        <div class="row">
-            <div class="card card-shadow-hover order-5">
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a id="cardLink" href="/posts/ubuntu-upgrade-arcanist-fix/how-to-fix-arcanist-not-working/">
-                            How to fix Arcanist after upgrading to Ubuntu 18.04
-                        </a>
-                    </h4>
-                    <p class="card-text"> <p>After upgrading to <em>Ubuntu 18.04 LTS</em>, I encountered this issue with <code>arc</code>:
+            <br>
+        
+            <div class="row">
+                <div class="card card-shadow-hover order-5">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a id="cardLink" href="/posts/ubuntu-upgrade-arcanist-fix/how-to-fix-arcanist-not-working/">
+                                How to fix Arcanist after upgrading to Ubuntu 18.04
+                            </a>
+                        </h4>
+                        <p class="card-text"> <p>After upgrading to <em>Ubuntu 18.04 LTS</em>, I encountered this issue with <code>arc</code>:
 &ldquo;PHP CONFIGURATION ERROR&rdquo;.
 Here it is a really quick fix.</p> </p>
-                    <p class="card-text">
-                        <small class="text-muted">
-                            <i class="far fa-calendar-alt"></i> May 23, 2018
-                        </small>
-                    </p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <i class="far fa-calendar-alt"></i> May 23, 2018
+                            </small>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
-    
-        <div class="row">
-            <div class="card card-shadow-hover order-6">
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a id="cardLink" href="/posts/bonus-stage-indie-games/">
-                            Five amazing indie videogames @BonusStage 2018
-                        </a>
-                    </h4>
-                    <p class="card-text"> <p>A cozy gaming bar filled with passionate game developers showing their creations.
+            <br>
+        
+            <div class="row">
+                <div class="card card-shadow-hover order-6">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a id="cardLink" href="/posts/bonus-stage-indie-games/">
+                                Five amazing indie videogames @BonusStage 2018
+                            </a>
+                        </h4>
+                        <p class="card-text"> <p>A cozy gaming bar filled with passionate game developers showing their creations.
 These are the essential words to describe the <em>Bonus Stage</em> event.</p>
 
 <p>It&rsquo;s Sunday 15 April, the last day of the London Games Week.<br />
 I take the bus, heading to Dalston where the Loading bar is full of shiny games to try.
 I&rsquo;m just arrived and, after opening the door, I discover a real paradise.</p> </p>
-                    <p class="card-text">
-                        <small class="text-muted">
-                            <i class="far fa-calendar-alt"></i> May 1, 2018
-                        </small>
-                    </p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <i class="far fa-calendar-alt"></i> May 1, 2018
+                            </small>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
-    
-        <div class="row">
-            <div class="card card-shadow-hover order-7">
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a id="cardLink" href="/posts/qemu/">
-                            QEMU: quick guide to a powerful virtualization tool
-                        </a>
-                    </h4>
-                    <p class="card-text"> <p>Sometimes you want to try a new operating system or particular software
+            <br>
+        
+            <div class="row">
+                <div class="card card-shadow-hover order-7">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a id="cardLink" href="/posts/qemu/">
+                                QEMU: quick guide to a powerful virtualization tool
+                            </a>
+                        </h4>
+                        <p class="card-text"> <p>Sometimes you want to try a new operating system or particular software
 configuration, but you don&rsquo;t want to touch your precious PC, risking
 to make your main production system unbootable.
 In these cases, software virtualization is your friend.</p> </p>
-                    <p class="card-text">
-                        <small class="text-muted">
-                            <i class="far fa-calendar-alt"></i> March 10, 2018
-                        </small>
-                    </p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <i class="far fa-calendar-alt"></i> March 10, 2018
+                            </small>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
-    
-        <div class="row">
-            <div class="card card-shadow-hover order-8">
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a id="cardLink" href="/posts/software-projects-college/">
-                            Four software projects I developed during college
-                        </a>
-                    </h4>
-                    <p class="card-text"> <p>During my time in Computer Engineering college in Italy, I developed
+            <br>
+        
+            <div class="row">
+                <div class="card card-shadow-hover order-8">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a id="cardLink" href="/posts/software-projects-college/">
+                                Four software projects I developed during college
+                            </a>
+                        </h4>
+                        <p class="card-text"> <p>During my time in Computer Engineering college in Italy, I developed
 various kind of software projects as an assignment for the courses.</p> </p>
-                    <p class="card-text">
-                        <small class="text-muted">
-                            <i class="far fa-calendar-alt"></i> January 20, 2018
-                        </small>
-                    </p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                <i class="far fa-calendar-alt"></i> January 20, 2018
+                            </small>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
-    
+            <br>
+        
+    </div>
 
 
-            <div id="footer" class="bg-dark text-white px-3 py-3">
-
-    <div class="row">
-        <div class="col-sm">
-            <p class="text-muted"> © 2018 Davide Cristini </p>
-        </div>
-
-        <div class="col-sm">
-        </div>
-
-        <div class="col-sm text-right">
-            <a href="https://davcri.github.io/index.xml">
-                <i class="fa fa-2x fa-rss-square"></i>
-            </a>
-            <a href="https://twitter.com/dav__cri">
-                <i class="fa fa-2x fa-twitter-square"></i>
-            </a>
-            <a href="https://plus.google.com/u/0/&#43;DavideCristini">
-                <i class="fa fa-2x fa-google-plus-square"></i>
-            </a>
-            <a href="mailto:davcri91@gmail.com">
-                <i class="fa fa-2x fa-envelope-o"></i>
-            </a>
+        <div class="container">
+    <div id="footer" class="bg-dark text-white px-3 py-3">
+        <div class="row">
+            <div class="col-sm">
+                <p class="text-muted"> © 2018 Davide Cristini </p>
+            </div>
+            <div class="col-sm">
+            </div>
+            <div class="col-sm text-right">
+                <a href="https://davcri.github.io/index.xml">
+                    <i class="fa fa-2x fa-rss-square"></i>
+                </a>
+                <a href="https://twitter.com/dav__cri">
+                    <i class="fa fa-2x fa-twitter-square"></i>
+                </a>
+                <a href="https://plus.google.com/u/0/&#43;DavideCristini">
+                    <i class="fa fa-2x fa-google-plus-square"></i>
+                </a>
+                <a href="mailto:davcri91@gmail.com">
+                    <i class="fa fa-2x fa-envelope-o"></i>
+                </a>
+            </div>
         </div>
     </div>
 </div>
 
-
-        </div>
     </body>
 </html>
