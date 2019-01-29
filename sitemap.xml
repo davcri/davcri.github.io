@@ -58,11 +58,6 @@
   </url>
   
   <url>
-    <loc>https://davcri.github.io/draft/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://davcri.github.io/tags/game-dev/</loc>
     <lastmod>2019-01-01T10:25:00+01:00</lastmod>
     <priority>0</priority>
@@ -99,11 +94,7 @@
   </url>
   
   <url>
-    <loc>https://davcri.github.io/draft/portfolio/v1/</loc>
-  </url>
-  
-  <url>
-    <loc>https://davcri.github.io/draft/portfolio/v2/</loc>
+    <loc>https://davcri.github.io/portfolio/</loc>
   </url>
   
   <url>

@@ -36,7 +36,6 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
 
-
     </head>
 
     <body>
@@ -79,68 +78,83 @@
         
 <div id="portfolio" class="container px-4">
     
-    <h1 class="display-3 my-3 text-center">PORTFOLIO</h1>
-    <div class="text-center">
-        <p>
-            Hi, I'm Davide Cristini. Nice to see you here. I'll tell you the last 3 years of my life in 3 paragraphs:
-        </p>
-        <hr>
-        <p class="">
-            <p class="lead">2017</p>
-            I graduated in computer engineering, in Italy.
-            <br> <br>
-            <p class="lead">2018</p>
-            I moved to London (UK) and I started working as a fullstack web developer using Python 3, Django, Angular,
-            Typescript.
-            <br>
-            <em>Most of the work that you see here was made during the spare time that I had from my fulltime job.</em>
-            <br> <br>
-            <p class="lead">2019</p>
-            I decided to change my career.
-            <br>
-            At the moment I'm working hard to enter what I consider the most revolutionary industry in <br> the history of
-            media:
-            <i>the videogame industry</i>.
-        </p>
+    <div id="portfolio-card" class="card text-center">
+        <div id="portfolio-card-header" class="card-header">
+            <h1 class="display-3 my-3 text-center">PORTFOLIO</h1>
+        </div>
+        <div class="card-body">
+
+            
+            <p>
+                Hi, I'm <b>Davide Cristini</b>. <br> <br>
+    
+                I'm a software developer and FOSS supporter. <br> <br>
+    
+                I recently decided to pursue one of my dreams. <br>
+                <em>
+                    I want to be part of the most revolutionary industry in
+                    the history of media: the videogame industry.
+                </em> <br> <br>
+    
+                If you want to know more about my and 
+                <em>why I want to create videogames</em> feel free to read the
+                <a href=/about>
+                    about me
+                </a> 
+                page.
+    
+                
+            </p>
+        </div>
     </div>
     
-    <div>
-        <h1 class="display-3 my-3 text-center">GAME PROGRAMMING</h1>
+    <div id="gamedev-card" class="card">
+        <div id="portfolio-gamedev-header" class="card-header">
+            <h1 class="display-3 my-3 text-center">GAME PROGRAMMING</h1>
+        </div>
         
-        <div class="row">
-            <div class="col-md-4">
-                <img src=/posts/devember2018-retrospective/triple-triad.png class="img-fluid">
-            </div>
-            <div class="col-md-8">
-                
+        <div class="card-body">
+            <div class="col-md-12">
                 <div class="row">
-                    <div class="col">
-
+                    <div class="col text-center">
                         <h2>Triple Triad</h2>
                     </div>
                 </div>
                 
+                <div class="embed-responsive embed-responsive-16by9 d-block mx-auto" style="width: 75%">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BVitFOrElUs" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
                 <div class="row">
-                    <div class="col">
+                    <div class="col text-center">
                         <p>
-                            Re-implementation of the cards mini-game from Final Fantasy VIII.
+                            Re-implementation of the cards mini-game from Final Fantasy VIII. <br>
+                            I worked on this project during <a href=/posts/devember2018-retrospective/>
+                                my Devember 2018 challenge.</a> <br>
+                            During this time I also contributed to Godot's official documentation.
+                            
                         </p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <p class="text-center lead">Features</p>
+                    </div>
+                    <div class="col justify-content-center" style="display:flex">
                         <ul>
                             <li>Card game mechanics</li>
                             <li>Data driven programming</li>
+                        </ul>
+                    </div>
+                    <div class="col justify-content-center" style="display:flex">
+                        <ul>
+                            <li>Game states & turns</li>
                             <li>Event-programming with Signals</li>
                         </ul>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">
-                        <p class="lead">Technologies</p>
-                        Made with <b>Godot Engine 3.0</b>. <br>
-                        I used <b>Python 3</b> to create a script that parses a text guide
-                        and generates a <b>JSON</b> formatted file containing cards data for the game.
-                    </div>
-                </div>
-                <div class="row my-3">
                     <div class="col text-center">
                         <a href="https://github.com/crystal-bit/triple-triad-godot" class="btn btn-outline-dark">
                             <i class="fa fa-github" aria-hidden="true"></i>
@@ -148,253 +162,166 @@
                         </a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <p class="lead">Relevant blog posts</p>
-                        <ul>
-                            <li>
-                                <a href=/posts/devember2018-retrospective/>Devember 2018 Retrospective
-                                </a>
-                            </li>
-                            <li>
-                                <a href=/posts/programmatically-create-atlastexture-with-gdscript/>Programmatically
-                                    create an AtlasTexture in Godot</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr>
-    
-    <div class="row">
-        <div class="col-md-4">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XyE_BSYU06M" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="col-md-8">
-            <h2>CS50 - Game dev course</h2>
-            <p>
-                Harvard's CS50 Game Development course is about the fundamentals of game programming. <br>
-                Each assignment focuses on a specific set of core mechanics. Most of these videogames are milestones of
-                this medium's history.
-            </p>
-            <p>
-                The 2D projects are made with <b>Lua</b> and <b>Love2D</b>. <br>
-                The 3D projects are made with <b>Unity3D</b>.
-            </p>
-            <div class="row my-3">
-                <div class="col text-center">
-                    <a href="https://github.com/davcri/cs50-assignments" class="btn btn-outline-dark">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                        <span class="align-middle">See on Github</span>
-                    </a>
-                </div>
             </div>
             <hr>
+            
             <div class="row">
-                <div class="col-md-4">
-                    <p class="lead">Super Mario</p>
-                    <ul>
-                        <li>Atlas Texture, spritesheets</li>
-                        <li>Background Parallax Scrolling</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <p class="lead">Pokemon</p>
-                    <ul>
-                        <li>RPG mechanics: turn-based combat system, Stats & Level up system</li>
-                        <li>GUI States with Pushdown automata</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <p class="lead">Zelda</p>
-                    <ul>
-                        <li>Hitbox & Hurtbox</li>
-                        
-                        <li>Object States</li>
-
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="lead">Flappy Bird</p>
-                    <ul>
-                        <li>Procedural level generation</li>
-                        <li>Game states</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <p class="lead">Breakout</p>
-                    <ul>
-                        <li>Particle effects</li>
-                        <li>Score system (filesystem load/save)</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <p class="lead">Angry Birds</p>
-                    <ul>
-                        <li>Physics simulation (Box2D)</li>
-                        <li>Events on collisions</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="lead">Helicopter 3D</p>
-                    Gioco scorrimento laterale in 3D (Gameplay 2.5D)
-                    <ul>
-                        <li>Game Object, MonoBehaviour</li>
-                        <li>Co-routines</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <p class="lead">Dreadhalls</p>
-                    Introcution to 3D graphics
-                    <ul>
-                        <li>Materials, lightning, texturing</li>
-                        <li>First Person Controller</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <p class="lead">Portal</p>
-                    <ul>
-                        <li>
-                            ProBuilder & ProGrids
-                        </li>
-                        <li>
-                            Raycasting, RenderTexture, Texture Masking
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-    <div>
-        <h1 class="display-3 my-3 text-center">COMPUTER ENGINEERING</h1>
-        <div class="row">
-            <div class="col-md-4">
-                <img class="img-fluid" src=/img/portfolio/engineering.jpg>
-            </div>
-            <div class="col-md-8">
-                <div class="row">
-                    <p>
-                        Even if it is not strictly game-dev related, I acquired a lot of useful knowledge and skills in
-                        my
-                        computer enginnering courses.
+                <div class="col-md-12">
+                    <h2 class="text-center">CS50 - Game dev course</h2>
+                    <div class="embed-responsive embed-responsive-16by9 d-block mx-auto" style="width: 75%">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XyE_BSYU06M" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <p class="text-center">
+                        I completed Harvard's CS50 Game Development course,
+                        working on the core mechanics of milestones of the history of the medium.
                     </p>
+                    <p class="text-center">
+                        The 2D projects are made with <b>Lua</b> and <b>Love2D</b>. <br>
+                        The 3D projects are made with <b>Unity3D</b>.
+                    </p>
+
+                    <div class="row cs50-text mx-auto">
+                        <div class="col-md-4 mario">
+                            <p class="lead">Super Mario</p>
+                            <ul>
+                                <li>Atlas Texture</li>
+                                <li>Parallax Scrolling</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 pokemon">
+                            <p class="lead">Pokemon</p>
+                            <ul>
+                                <li>RPG mechanics</li>
+                                <li>GUI States (Pushdown automata)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 zelda">
+                            <p class="lead">Zelda</p>
+                            <ul>
+                                <li>Hitbox & Hurtbox</li>
+                                <li>Object States</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row cs50-text mx-auto">
+                        <div class="col-md-4 angry">
+                            <p class="lead">Angry Birds</p>
+                            <ul>
+                                <li>Physics simulation (Box2D)</li>
+                                <li>Game states</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 breakout">
+                            <p class="lead">Breakout</p>
+                            <ul>
+                                <li>Particle effects</li>
+                                <li>Score system (filesystem load/save)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 heli">
+                            <p class="lead">Other games</p>
+                            <ul>
+                                <li>Unity: C# Scripting</li>
+                                <li>Unity 3D basics: materials, lightning, texturing</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col text-center">
+                            <a href="https://github.com/davcri/cs50-assignments" class="btn btn-outline-dark">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                                <span class="align-middle">See on Github</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <hr>
-                <div class="row">
-                    <div class="col">
-                        <p class="lead">Software development</p>
-                        <ul>
-                            <li>Algorithms and data structures</li>
-                            <li>SCRUM, Design patterns, testing</li>
-                            <li>UI/UX design, Design Thinking</li>
-                            <li>Control system theory</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <p class="lead">Mathematics</p>
-                        <ul>
-                            <li>Real and complex analysis, numerical analysis</li>
-                            <li>Euclidean and analytic geometry</li>
-                            <li>Probabilty and statistics</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <p class="lead">Physics</p>
-                        <ul>
-                            <li>Classical mechanics</li>
-                            <li>Signal analysis</li>
-                            <li>Electrical circuits, Magnetic fields, Thermodynamics</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <p class="lead">Relevant blog posts</p>
-                        <ul>
-                            <li>
-                                <a href=/posts/software-projects-college/>Four software projects I developed
-                                    during college</a>
-                            </li>
-                            <li>
-                                <a href=/posts/qemu/>QEMU: quick guide</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>                
             </div>
         </div>
     </div>
-    
-    <div>
-        <h1 class="display-3 text-center">SOFT SKILLS</h1>
+    <div id="softskills-card" class="card">
         
-        <div class="row">
-            <div class="col-md-4">
-                <img src=/img/portfolio/crystalbit-playlist.png class="img-fluid">
-            </div>
-            <div class="col-md-8">
-                <h2>YouTube Channel - Crystal Bit</h2>
-                <p>
-                    Video tutorials about software & games development. <br>
-                    I started in June 2018, while I was working full time
-                    as a web developer. <br>
-                    In 6 months I achieved:
-                    <ul>
-                        <li>200+ subscribers (very active members who send me lots of kudos: they share my same values)</li>
-                        <li>13 videos</li>
-                        <li>~100% like rate</li>
-                        <li>10.000 minutes watched</li>
-                    </ul>
-                    <div class="row my-3">
+        <div id="portfolio-softskills-header" class="card-header">
+            <h1 class="display-3 text-center">SOFT SKILLS</h1>
+        </div>
+        <div class="card-body">
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center">YouTube Channel - Crystal Bit</h2>
+                    <img src=/img/portfolio/crystalbit-yt-cover.png class="img-fluid d-block mx-auto" style="width: 75%">
+                    <div class="row">
+                        <div class="col">
+                            <p class="text-center">
+                                At university I really enjoyed studying with other people: I decided to continue this good habit by
+                                sharing video-tutorials about software & games development. <br> <br>
+                                I started in June 2018 while I was working full-time and, at the time of writing (January 2019),
+                                I achieved:
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 offset-1">
+                            <img class="img-fluid" src="/img/portfolio/analytics.png" alt="">
+                        </div>
+                        <div class="col-md-6 align-self-center">
+                            <ul>
+                                <li>200+ subscribers <br> (very active members that share my same values)</li>
+                                <li>15 videos</li>
+                                <li>~100% like rate</li>
+                                <li>30.000 minutes watched</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="col text-center">
                             <a href="https://www.youtube.com/channel/UCFVgUrvckqp0i_pbCj3wjfA" class="btn btn-outline-dark">
                                 <i class="fa fa-youtube" aria-hidden="true"></i>
                                 <span class="align-middle">See on YouTube</span>
-                            </a>
+                            </a> <br>
+                            <em>Note: videos are in Italian</em>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <hr>
+            
+            <h2 class="text-center">Open Source Contributions</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    
+                    <div class="row">
+                        <div class="col">
+                            <p class="lead text-center">Blender Power Sequencer</p>
+                            <img src=/img/portfolio/bps.png class="img-fluid">
+                            <p>
+                                <a href="https://github.com/GDquest/Blender-power-sequencer#credits">
+                                    I contributed </a> to the official documentation and helped with 
+                                    some improvements of this <em>Python</em> addon for Blender. 
+                                    <br> I'm currently using this plugin for my video editing process.
+                            </p>
                         </div>
                     </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="col">
+                        
+                        <p class="text-center lead">AppImage store (Softhub)</p>
 
-                    Note: videos are in Italian.
-                </p>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-4">
-                <img src=/img/portfolio/foss.png class="img-fluid">
-            </div>
-            <div class="col-md-8">
-                <h2>Open Source Contributions</h2>
-                
-                <p class="lead">Blender Power Sequencer</p>
-                <p>
-                    BPS it's an add-on to improve videdo editing capabilities of Blender3D. <br>
-                    <a href="https://github.com/GDquest/Blender-power-sequencer#credits">I contributed to the official
-                        documentation</a>.
-                </p>
-                
-                <p class="lead">Softhub</p>
-                <div>
-                    App-store-like web app that I developed as a part of my Bachelor's thesys. <br>
-                    I created this web-app AppImage interacting with AppImage lead developer.
-                    <br>
-                    <a href="https://davcri.github.io/posts/software-projects-college/">Read more here</a>
+                        <div class="embed-responsive embed-responsive-16by9 d-block mx-auto">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/sRPfpDk9aDg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <p>
+                            I collaborated with the <em>AppImage</em> lead developer to create a web app store where to host 
+                            AppImage binaries. <br>
+                            This was part of my computer engineering Bachelor's thesis.
+                            <a href="https://davcri.github.io/posts/software-projects-university/">Read more here</a>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div style="margin-bottom: 5rem;"></div>
     </div>
 </div>
 
@@ -414,8 +341,8 @@
                 <a href="https://twitter.com/dav__cri">
                     <i class="fa fa-2x fa-twitter-square"></i>
                 </a>
-                <a href="">
-                    <i class="fa fa-2x fa-google-plus-square"></i>
+                <a href="https://www.instagram.com/crystal_bit/">
+                    <i class="fa fa-2x fa-instagram"></i>
                 </a>
                 <a href="mailto:davcri91@gmail.com">
                     <i class="fa fa-2x fa-envelope-o"></i>
