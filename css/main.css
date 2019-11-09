@@ -8,6 +8,7 @@
     background-color: rgb(220, 200, 200);
 }
 
+
 /* #cardLink {
     display: block;
 } */
@@ -17,7 +18,7 @@
 }
 
 .custom-card {
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem;
 }
 
@@ -35,13 +36,39 @@
     }
 }
 
+.pager {
+    text-decoration: none;
+    color: #666;
+    margin: 0px 80px;
+    min-height: 50px;
+    white-space: nowrap;
+}
+
+
+.container .pager a.previous,
+.container .pager a.next {
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 0.40rem;
+    border: 1px solid #ccc
+}
+
+.container .pager a.previous:hover,
+.container .pager a.next:hover {
+    background: #fefefe;
+    color: #000;
+    text-decoration: none
+}
+
+
 /* Post page CSS */
 
 #post-container img {
     box-shadow: 0em 0em 0.6em 0.1em rgba(0, 0, 0, 0.6)
 }
 
-#post-body h2, #post-body h3 {
+#post-body h2,
+#post-body h3 {
     margin-top: 1.2em;
 }
 
@@ -54,6 +81,7 @@ pre {
 body {
     background-color: rgb(247, 247, 247);
 }
+
 
 /* Portfolio page */
 
@@ -93,7 +121,8 @@ body {
     vertical-align: middle;
 }
 
-#portfolio a, .btn {
+#portfolio a,
+.btn {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
@@ -102,7 +131,8 @@ body {
     font-size: 1.2rem;
 }
 
-#portfolio img, #portfolio div .embed-responsive {
+#portfolio img,
+#portfolio div .embed-responsive {
     box-shadow: 0em 0em 0.6em 0.1em rgba(0, 0, 0, 0.6);
     border-radius: 0.50rem;
     margin-top: 2.5rem;
@@ -151,17 +181,17 @@ body {
 
 #portfolio .zelda {
     background-image: url("/img/portfolio/zelda.png");
-}    
+}
 
-#portfolio .angry{
+#portfolio .angry {
     background-image: url("/img/portfolio/angry-birds.png");
-}    
+}
 
-#portfolio .breakout{
+#portfolio .breakout {
     background-image: url("/img/portfolio/breakout.png");
 }
 
-#portfolio .heli{
+#portfolio .heli {
     background-image: url("/img/portfolio/heli3d.png");
 }
 
@@ -172,6 +202,7 @@ body {
 #portfolio .mario {
     background-image: url("/img/portfolio/mario.png");
 }
+
 
 /* About page */
 

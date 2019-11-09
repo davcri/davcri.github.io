@@ -1,128 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on davcri</title>
-    <link>https://davcri.github.io/posts/</link>
-    <description>Recent content in Posts on davcri</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <managingEditor>davcri91@gmail.com (Davide Cristini)</managingEditor>
-    <webMaster>davcri91@gmail.com (Davide Cristini)</webMaster>
-    <lastBuildDate>Tue, 01 Jan 2019 10:25:00 +0100</lastBuildDate>
-    
-	<atom:link href="https://davcri.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Devember 2018 Retrospective</title>
-      <link>https://davcri.github.io/posts/devember2018-retrospective/</link>
-      <pubDate>Tue, 01 Jan 2019 10:25:00 +0100</pubDate>
-      <author>davcri91@gmail.com (Davide Cristini)</author>
-      <guid>https://davcri.github.io/posts/devember2018-retrospective/</guid>
-      <description>&lt;p&gt;During December I took a challenge: code 1 hour every day. I decide to work on a
-Triple Triad clone (Final Fantasy VIII card game) made with the Godot Engine.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>How to reparent nodes with GDScript</title>
-      <link>https://davcri.github.io/posts/godot-reparent-node/</link>
-      <pubDate>Sun, 16 Dec 2018 20:00:59 +0000</pubDate>
-      <author>davcri91@gmail.com (Davide Cristini)</author>
-      <guid>https://davcri.github.io/posts/godot-reparent-node/</guid>
-      <description>&lt;p&gt;While working on a card game with Godot (the code will soon be open sourced), I
-had to reparent a node from one parent to another. Here it is two simple ways to do it.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Programmatically create an AtlasTexture in Godot</title>
-      <link>https://davcri.github.io/posts/programmatically-create-atlastexture-with-gdscript/</link>
-      <pubDate>Tue, 04 Dec 2018 16:23:44 +0000</pubDate>
-      <author>davcri91@gmail.com (Davide Cristini)</author>
-      <guid>https://davcri.github.io/posts/programmatically-create-atlastexture-with-gdscript/</guid>
-      <description>I&amp;rsquo;m currently working on a card game tutorial (that will soon be open sourced) and I needed to create an AtlasTexture resource programmatically, a task that I didn&amp;rsquo;t find documented anywhere in the Godot reference so I thought about creating this short post to describe how to do it.
-What I tried At first I tried to create an AtlasTexture with var t = AtlasTexture() but this was not working at all:</description>
-    </item>
-    
-    <item>
-      <title>Implicit type conversion in GDScript - When math gets in the way</title>
-      <link>https://davcri.github.io/posts/gdscript-implicit-type-conversion/</link>
-      <pubDate>Thu, 08 Nov 2018 12:00:59 +0000</pubDate>
-      <author>davcri91@gmail.com (Davide Cristini)</author>
-      <guid>https://davcri.github.io/posts/gdscript-implicit-type-conversion/</guid>
-      <description>&lt;p&gt;While coding a simple AI for my (&lt;em&gt;italian&lt;/em&gt;) &lt;a href=&#34;https://youtu.be/AY1zuH2mHQ0&#34;&gt;Godot video tutorial series&lt;/a&gt;, I
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on davcri</title><link>https://davcri.github.io/posts/</link><description>Recent content in Posts on davcri</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>davcri91@gmail.com (Davide Cristini)</managingEditor><webMaster>davcri91@gmail.com (Davide Cristini)</webMaster><lastBuildDate>Tue, 01 Jan 2019 10:25:00 +0100</lastBuildDate><atom:link href="https://davcri.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Devember 2018 Retrospective</title><link>https://davcri.github.io/posts/devember2018-retrospective/</link><pubDate>Tue, 01 Jan 2019 10:25:00 +0100</pubDate><author>davcri91@gmail.com (Davide Cristini)</author><guid>https://davcri.github.io/posts/devember2018-retrospective/</guid><description>&lt;p&gt;During December I took a challenge: code 1 hour every day. I decide to work on a
+Triple Triad clone (Final Fantasy VIII card game) made with the Godot Engine.&lt;/p&gt;</description></item><item><title>2018 Retrospective - My first year in the web</title><link>https://davcri.github.io/posts/my-first-year-on-the-web-2018-retrospective/</link><pubDate>Mon, 31 Dec 2018 16:23:44 +0000</pubDate><author>davcri91@gmail.com (Davide Cristini)</author><guid>https://davcri.github.io/posts/my-first-year-on-the-web-2018-retrospective/</guid><description>This is my first year on the web, and I want to make a sort of retrospective to summarize what went good and what went bad in my 2018 and what I plan for the future.
+I still have to get used to blog writing, this post will be confusonary, you have been warned.
+How it started - The vision At the beginning of 2018 I opened this blog, withouth really knowing what to write in it.</description></item><item><title>How to reparent nodes with GDScript</title><link>https://davcri.github.io/posts/godot-reparent-node/</link><pubDate>Sun, 16 Dec 2018 20:00:59 +0000</pubDate><author>davcri91@gmail.com (Davide Cristini)</author><guid>https://davcri.github.io/posts/godot-reparent-node/</guid><description>&lt;p&gt;While working on a card game with Godot (the code will soon be open sourced), I
+had to reparent a node from one parent to another. Here it is two simple ways to do it.&lt;/p&gt;</description></item><item><title>Programmatically create an AtlasTexture in Godot</title><link>https://davcri.github.io/posts/programmatically-create-atlastexture-with-gdscript/</link><pubDate>Tue, 04 Dec 2018 16:23:44 +0000</pubDate><author>davcri91@gmail.com (Davide Cristini)</author><guid>https://davcri.github.io/posts/programmatically-create-atlastexture-with-gdscript/</guid><description>I&amp;rsquo;m currently working on a card game tutorial (that will soon be open sourced) and I needed to create an AtlasTexture resource programmatically, a task that I didn&amp;rsquo;t find documented anywhere in the Godot reference so I thought about creating this short post to describe how to do it.
+What I tried At first I tried to create an AtlasTexture with var t = AtlasTexture() but this was not working at all:</description></item><item><title>Implicit type conversion in GDScript - When math gets in the way</title><link>https://davcri.github.io/posts/gdscript-implicit-type-conversion/</link><pubDate>Thu, 08 Nov 2018 12:00:59 +0000</pubDate><author>davcri91@gmail.com (Davide Cristini)</author><guid>https://davcri.github.io/posts/gdscript-implicit-type-conversion/</guid><description>&lt;p&gt;While coding a simple AI for my (&lt;em&gt;italian&lt;/em&gt;) &lt;a href=&#34;https://youtu.be/AY1zuH2mHQ0&#34;&gt;Godot video tutorial series&lt;/a&gt;, I
 needed vectors with these kind of random values:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Vector2(0, 1)&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Vector2(-1, 1)&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&amp;hellip;&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;Essentially I wanted to generate random values of &lt;code&gt;1&lt;/code&gt;, &lt;code&gt;0&lt;/code&gt; or &lt;code&gt;-1&lt;/code&gt; and then use
-them as Vector2 coordinates.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>First steps with CS50 - How to install Love2D on Linux</title>
-      <link>https://davcri.github.io/posts/cs50-install-love2d-on-linux/</link>
-      <pubDate>Sat, 15 Sep 2018 10:25:00 +0100</pubDate>
-      <author>davcri91@gmail.com (Davide Cristini)</author>
-      <guid>https://davcri.github.io/posts/cs50-install-love2d-on-linux/</guid>
-      <description>&lt;p&gt;Harvard&amp;rsquo;s CS50 created the &lt;em&gt;Introduction to videogame development&lt;/em&gt; course that I started
+them as Vector2 coordinates.&lt;/p&gt;</description></item><item><title>First steps with CS50 - How to install Love2D on Linux</title><link>https://davcri.github.io/posts/cs50-install-love2d-on-linux/</link><pubDate>Sat, 15 Sep 2018 10:25:00 +0100</pubDate><author>davcri91@gmail.com (Davide Cristini)</author><guid>https://davcri.github.io/posts/cs50-install-love2d-on-linux/</guid><description>&lt;p&gt;Harvard&amp;rsquo;s CS50 created the &lt;em&gt;Introduction to videogame development&lt;/em&gt; course that I started
 following with the Italian &lt;a href=&#34;https://github.com/GameLoop-it/cs50_course_materials&#34;&gt;Gameloop.it&lt;/a&gt; community.&lt;/p&gt;
-
 &lt;p&gt;This course requires students to edit some pre-made game projects that were originally made with
 &lt;em&gt;Love 0.10&lt;/em&gt;. Unfortunately they are not compatible with the newest Love2D version that
 you find in most Linux distros (&lt;em&gt;v1.11&lt;/em&gt; at the time of writing), but these simple guide will
-help you fixing this issue.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>How to fix Arcanist after upgrading to Ubuntu 18.04</title>
-      <link>https://davcri.github.io/posts/ubuntu-upgrade-arcanist-fix/how-to-fix-arcanist-not-working/</link>
-      <pubDate>Wed, 23 May 2018 00:00:00 +0100</pubDate>
-      <author>davcri91@gmail.com (Davide Cristini)</author>
-      <guid>https://davcri.github.io/posts/ubuntu-upgrade-arcanist-fix/how-to-fix-arcanist-not-working/</guid>
-      <description>&lt;p&gt;After upgrading to &lt;em&gt;Ubuntu 18.04 LTS&lt;/em&gt;, I encountered this issue with &lt;code&gt;arc&lt;/code&gt;:
+help you fixing this issue.&lt;/p&gt;</description></item><item><title>How to fix Arcanist after upgrading to Ubuntu 18.04</title><link>https://davcri.github.io/posts/ubuntu-upgrade-arcanist-fix/how-to-fix-arcanist-not-working/</link><pubDate>Wed, 23 May 2018 00:00:00 +0100</pubDate><author>davcri91@gmail.com (Davide Cristini)</author><guid>https://davcri.github.io/posts/ubuntu-upgrade-arcanist-fix/how-to-fix-arcanist-not-working/</guid><description>&lt;p&gt;After upgrading to &lt;em&gt;Ubuntu 18.04 LTS&lt;/em&gt;, I encountered this issue with &lt;code&gt;arc&lt;/code&gt;:
 &amp;ldquo;PHP CONFIGURATION ERROR&amp;rdquo;.
-Here it is a really quick fix.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Five amazing indie videogames @BonusStage 2018</title>
-      <link>https://davcri.github.io/posts/bonus-stage-indie-games/</link>
-      <pubDate>Tue, 01 May 2018 00:00:00 +0100</pubDate>
-      <author>davcri91@gmail.com (Davide Cristini)</author>
-      <guid>https://davcri.github.io/posts/bonus-stage-indie-games/</guid>
-      <description>&lt;p&gt;A cozy gaming bar filled with passionate game developers showing their creations.
+Here it is a really quick fix.&lt;/p&gt;</description></item><item><title>Five amazing indie videogames @BonusStage 2018</title><link>https://davcri.github.io/posts/bonus-stage-indie-games/</link><pubDate>Tue, 01 May 2018 00:00:00 +0100</pubDate><author>davcri91@gmail.com (Davide Cristini)</author><guid>https://davcri.github.io/posts/bonus-stage-indie-games/</guid><description>&lt;p&gt;A cozy gaming bar filled with passionate game developers showing their creations.
 These are the essential words to describe the &lt;em&gt;Bonus Stage&lt;/em&gt; event.&lt;/p&gt;
-
 &lt;p&gt;It&amp;rsquo;s Sunday 15 April, the last day of the London Games Week.&lt;br /&gt;
 I take the bus, heading to Dalston where the Loading bar is full of shiny games to try.
-I&amp;rsquo;m just arrived and, after opening the door, I discover a real paradise.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>QEMU: quick guide to a powerful virtualization tool</title>
-      <link>https://davcri.github.io/posts/qemu/</link>
-      <pubDate>Sat, 10 Mar 2018 10:20:00 +0100</pubDate>
-      <author>davcri91@gmail.com (Davide Cristini)</author>
-      <guid>https://davcri.github.io/posts/qemu/</guid>
-      <description>&lt;p&gt;Sometimes you want to try a new operating system or particular software
+I&amp;rsquo;m just arrived and, after opening the door, I discover a real paradise.&lt;/p&gt;</description></item><item><title>QEMU: quick guide to a powerful virtualization tool</title><link>https://davcri.github.io/posts/qemu/</link><pubDate>Sat, 10 Mar 2018 10:20:00 +0100</pubDate><author>davcri91@gmail.com (Davide Cristini)</author><guid>https://davcri.github.io/posts/qemu/</guid><description>&lt;p&gt;Sometimes you want to try a new operating system or particular software
 configuration, but you don&amp;rsquo;t want to touch your precious PC, risking
 to make your main production system unbootable.
-In these cases, software virtualization is your friend.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Four software projects I developed in university</title>
-      <link>https://davcri.github.io/posts/software-projects-university/</link>
-      <pubDate>Sat, 20 Jan 2018 17:00:00 +0100</pubDate>
-      <author>davcri91@gmail.com (Davide Cristini)</author>
-      <guid>https://davcri.github.io/posts/software-projects-university/</guid>
-      <description>&lt;p&gt;During my time in Computer Engineering University in Italy, I developed
-various kind of software projects as an assignment for the courses.&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+In these cases, software virtualization is your friend.&lt;/p&gt;</description></item><item><title>Four software projects I developed in university</title><link>https://davcri.github.io/posts/software-projects-university/</link><pubDate>Sat, 20 Jan 2018 17:00:00 +0100</pubDate><author>davcri91@gmail.com (Davide Cristini)</author><guid>https://davcri.github.io/posts/software-projects-university/</guid><description>&lt;p&gt;During my time in Computer Engineering University in Italy, I developed
+various kind of software projects as an assignment for the courses.&lt;/p&gt;</description></item></channel></rss>
