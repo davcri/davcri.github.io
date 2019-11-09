@@ -15,19 +15,21 @@
         <meta property="og:site_name" content="Crystal Bit">
 
         
-            <title> davcri </title>
-            
-            
-            <meta property="og:title" content="davcri" />
-            <meta property="og:type" content="website" />
-        
+<title> Git credentials: avoid inserting username and password every time </title>
+
       
         
-            
-            <meta name="description" content="Crystal Bit blog - A world of magic and software" />
-            <meta property="og:description" content="Crystal Bit blog - A world of magic and software" />
-            <meta property="og:image" itemprop="image" content="https://davcri.github.io/img/logo/logo-5.png" />
-        
+<meta name="description" content="Are you annoyed because git keeps asking for credentials every time after a git push or pull?
+
+There …" />
+<meta property="og:title" content="Git credentials: avoid inserting username and password every time" />
+<meta property="og:image" itemprop="image" content="https://davcri.github.io/" />
+<meta property="og:url" content="https://davcri.github.io/posts/avoid-inserting-credentials-with-git-every-time/avoid-inserting-credentials-with-git-every-time/" />
+<meta property="og:description" content="Are you annoyed because git keeps asking for credentials every time after a git push or pull?
+
+There …" />
+<meta property="og:type" content="article" />
+
 
         
         <link rel="shortcut icon" type="image/png" href="/img/logo/logo-5.png"/>
@@ -77,25 +79,71 @@
 
 
         
-
 <div class="container">
     <div class="card my-3">
-        <div class="px-3 py-3">
-            <h2>
-                Posts
-            </h2>
-            <ul>
-                
-                <li> <a href="/posts/programmatically-create-atlastexture-with-gdscript/"> Programmatically create an AtlasTexture in Godot </a> </li>
-                
-            </ul>
+        <div id="post-container" class="card-body">
+            <h2 class="card-title"> Git credentials: avoid inserting username and password every time </h2>
+            <div class="row">
+                <div class="col">
+                    <p class="text-muted">
+                        1min read <br>
+
+                        
+                    </p>
+                </div>
+                <div class="col">
+                    <p class="text-right text-muted">
+                        November 10, 2019
+                    </p>
+                </div>
+            </div>
+            
+            
+            <hr>
+            
+            <div id="post-body" class="card-text">
+                <p>Are you annoyed because git keeps asking for credentials every time after a <code>git push</code> or <code>pull</code>?</p>
+
+<p>There are a couple of solutions:</p>
+
+<ol>
+<li>SSH keys</li>
+<li>git credentials</li>
+</ol>
+
+<p>Usually I always used the first method, but recently <a href="https://stackoverflow.com/questions/35942754/how-to-save-username-and-password-in-git">I found this answer</a> on Stack Overflow and it seems that with this single command git will enable the helper that we need:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git config --global credential.helper store</code></pre></div>
+<p>Now issue git pull o git push and inert your credentials.<br />
+After this git will save them and you will never see another details promtp again!</p>
+
+<p>I&rsquo;m using this method since a month and never had an issue, hope this will be helpful also to you!</p>
+            </div>
+            
+            <div class="share">
+                <h4> Share </h4>
+                <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fdavcri.github.io%2fposts%2favoid-inserting-credentials-with-git-every-time%2favoid-inserting-credentials-with-git-every-time%2f"> Share on Twitter </a>
+            </div>
         </div>
-        
-
- 
     </div>
-</div>
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
 
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'crystal-bit-io';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div>
 
 
         <div class="container">

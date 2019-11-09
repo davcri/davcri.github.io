@@ -82,6 +82,9 @@ body {
     background-color: rgb(247, 247, 247);
 }
 
+.container .fa {
+    margin: 0.08rem;
+}
 
 /* Portfolio page */
 
