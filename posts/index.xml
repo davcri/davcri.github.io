@@ -14,7 +14,7 @@ them as Vector2 coordinates.&lt;/p></description></item><item><title>First steps
 following with the Italian &lt;a href="https://github.com/GameLoop-it/cs50_course_materials">Gameloop.it&lt;/a> community.&lt;/p>
 &lt;p>This course requires students to edit some pre-made game projects that were originally made with
 &lt;em>Love 0.10&lt;/em>. Unfortunately they are not compatible with the newest Love2D version that
-you find in most Linux distros (&lt;em>v1.11&lt;/em> at the time of writing), but these simple guide will
+you find in most Linux distros (&lt;em>v11.1&lt;/em> at the time of writing), but these simple guide will
 help you fixing this issue.&lt;/p></description></item><item><title>How to fix Arcanist after upgrading to Ubuntu 18.04</title><link>https://davcri.github.io/posts/ubuntu-upgrade-arcanist-fix/how-to-fix-arcanist-not-working/</link><pubDate>Wed, 23 May 2018 00:00:00 +0100</pubDate><author>davcri91@gmail.com (Davide Cristini)</author><guid>https://davcri.github.io/posts/ubuntu-upgrade-arcanist-fix/how-to-fix-arcanist-not-working/</guid><description>&lt;p>After upgrading to &lt;em>Ubuntu 18.04 LTS&lt;/em>, I encountered this issue with &lt;code>arc&lt;/code>:
 &amp;ldquo;PHP CONFIGURATION ERROR&amp;rdquo;.
 Here it is a really quick fix.&lt;/p></description></item><item><title>Five amazing indie videogames @BonusStage 2018</title><link>https://davcri.github.io/posts/bonus-stage-indie-games/</link><pubDate>Tue, 01 May 2018 00:00:00 +0100</pubDate><author>davcri91@gmail.com (Davide Cristini)</author><guid>https://davcri.github.io/posts/bonus-stage-indie-games/</guid><description>&lt;p>A cozy gaming bar filled with passionate game developers showing their creations.
