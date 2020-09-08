@@ -8,6 +8,34 @@
     background-color: rgb(220, 200, 200);
 }
 
+.text-decoration-none {
+    text-decoration: none !important; 
+}
+
+nav h2 a {
+    color: #111;
+}
+
+h1 {
+    font-size: 2.0rem;
+    color: #111;
+}
+
+h2 {
+    letter-spacing: -0.085rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #111;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #111;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
 
 /* #cardLink {
     display: block;
@@ -30,10 +58,16 @@
     height: 300px;
 }
 
-@media (min-width: 992px) {
+/* https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints */
+@media (min-width: 768px) {
     .container {
-        width: 60%;
+        /* max-width: 660px; */
     }
+}
+
+.container {
+    max-width: 570px;
+    padding: 1.7rem;
 }
 
 .pager {
@@ -80,6 +114,8 @@ pre {
 
 body {
     background-color: rgb(247, 247, 247);
+    color: #333;
+    /* background-image: linear-gradient(135deg, #c8d2ff 0%, #e2d7ff 100%); */
 }
 
 .container .fa {
