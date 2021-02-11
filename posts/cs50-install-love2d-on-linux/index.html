@@ -37,7 +37,7 @@ in example <code>love assignment-0</code>.</p><div class="text-center my-4"><fig
 won&rsquo;t find prebuilt Love2D packages on their website. So we have to download the source
 code and compile it by ourselves.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=color:#75715e># download love 0.10.2 source code</span>
 wget https://bitbucket.org/rude/love/get/0.10.2.tar.gz
-<span style=color:#75715e># decompress and extract the archive</span> 
+<span style=color:#75715e># decompress and extract the archive </span>
 tar xzf 0.10.2.tar.gz
 <span style=color:#75715e># enter the project directory</span>
 cd rude-love-afc69c4f7145
@@ -52,7 +52,7 @@ sudo pacman -S physfs
 ./configure
 make
 
-<span style=color:#75715e># install</span> 
+<span style=color:#75715e># install </span>
 sudo make install
 
 </code></pre></div><p>In case you want to remove this package, go into the build directory and then:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=color:#75715e># if you want to remove the packages</span>
@@ -60,7 +60,7 @@ sudo make uninstall
 </code></pre></div><div class="text-center my-4"><figure class="figure my-0"><img src=./compilation-success.png alt class="figure-img img-fluid rounded"><figcaption class=figure-caption><p>Succesful Love2D compilation and installation</p></figcaption></figure></div><p>On a final note it&rsquo;s probably better to create a package and then install it
 with <code>pacman</code>. Actually I never used the ABS (Arch Build System) so maybe now I have a good excuse to use it.</p><p>Hope this will help some new GNU/Linux user, I guess not everyone is a pro and sometimes
 a little guide like this one can be helpful.</p><p>Ciao guys!</p></div></div><div id=disqus_thread></div><script type=text/javascript>(function(){if(window.location.hostname=="localhost")
-return;var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;var disqus_shortname='crystal-bit-io';dsq.src='//'+disqus_shortname+'.disqus.com/embed.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq);})();</script><noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=http://disqus.com/ class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a><div id=footer><div class=row><div class=col-3></div><div class=col-3></div><div class="col-6 text-right"><p class="small text-muted">© 2020 Davide Cristini</p></div></div></div></div><script type=text/javascript src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?tracking=1&thirdparty=1&always=1"></script><script>function enableGoogleAnalytics(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+return;var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;var disqus_shortname='crystal-bit-io';dsq.src='//'+disqus_shortname+'.disqus.com/embed.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq);})();</script><noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=http://disqus.com/ class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a><div id=footer><div class=row><div class=col-3></div><div class=col-3></div><div class="col-6 text-right"><p class="small text-muted">© 2021 Davide Cristini</p></div></div></div></div><script type=text/javascript src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?tracking=1&thirdparty=1&always=1"></script><script>function enableGoogleAnalytics(){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());gtag('config','');}
 function getCookiesAsObj(){return document.cookie.split(';').reduce((res,c)=>{const[key,val]=c.trim().split('=').map(decodeURIComponent)
 const allNumbers=str=>/^\d+$/.test(str);try{return Object.assign(res,{[key]:allNumbers(val)?val:JSON.parse(val)})}catch(e){return Object.assign(res,{[key]:val})}},{});}
