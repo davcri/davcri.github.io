@@ -25,4 +25,8 @@ I&amp;rsquo;m just arrived and, after opening the door, I discover a real paradi
 configuration, but you don&amp;rsquo;t want to touch your precious PC, risking
 to make your main production system unbootable.
 In these cases, software virtualization is your friend.&lt;/p></description></item><item><title>Four software projects I developed in university</title><link>https://davcri.github.io/posts/software-projects-university/</link><pubDate>Sat, 20 Jan 2018 17:00:00 +0100</pubDate><author>davcri91@gmail.com (Davide Cristini)</author><guid>https://davcri.github.io/posts/software-projects-university/</guid><description>&lt;p>During my time in Computer Engineering University in Italy, I developed
-various kind of software projects as an assignment for the courses.&lt;/p></description></item></channel></rss>
+various kind of software projects as an assignment for the courses.&lt;/p></description></item><item><title>Harvard CS50</title><link>https://davcri.github.io/posts/harvard/</link><pubDate>Fri, 19 Jan 2018 17:29:09 +0100</pubDate><author>davcri91@gmail.com (Davide Cristini)</author><guid>https://davcri.github.io/posts/harvard/</guid><description>Hello world.
+Harvard CS50 2018
+See on Github I completed Harvard's CS50 Game Development course, working on the core mechanics of milestones of the history of the medium. -- The 2D projects are made with Lua and Love2D. The 3D projects are made with Unity3D. -- Super Mario
+Atlas Texture Parallax Scrolling Pokemon
+RPG mechanics GUI States (Pushdown automata) Zelda</description></item></channel></rss>

@@ -1,7 +1,7 @@
 <!doctype html><html lang=en>
 <head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112742714-1"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-112742714-1')</script>
+<script>const activateAnalytics=window.location.hostname!=="localhost";if(activateAnalytics){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-112742714-1')}</script>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta property="og:site_name" content="davcri">
@@ -15,8 +15,6 @@
 <link rel=stylesheet href=https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css integrity=sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4 crossorigin=anonymous>
 <link rel=stylesheet href=https://use.fontawesome.com/releases/v5.2.0/css/all.css integrity=sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ crossorigin=anonymous>
 <link rel=stylesheet href=/css/main.css>
-<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel=stylesheet>
-<link href="https://fonts.googleapis.com/css?family=Staatliches" rel=stylesheet>
 </head>
 <body>
 <script src=https://code.jquery.com/jquery-3.3.1.slim.min.js integrity=sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo crossorigin=anonymous defer></script>
@@ -30,50 +28,25 @@
 <div class="col-sm-3 col-12 text-sm-right text-center pt-sm-4">
 </div>
 <div class="col-sm-9 col-12 text-sm-left text-center">
-<h2 class="m-0 mb-2 mt-4">
-<a href=/ class=text-decoration-none>
-davcri
-</a>
+<h2 class="m-0 mb-0 mt-4">
+<a href=/ class=text-decoration-none> davcri </a>
 </h2>
-<p class="text-muted mb-1">
-Freelance game developer
-</p>
-<ul id=nav-links class="list-inline mb-2">
+<p class="muted small mt-0">Freelance software developer</p>
+<ul id=nav-links class="list-inline mb-3">
 <li class=list-inline-item>
-<a class="badge badge-white badge-custom" href=/ title>Blog</a>
+<a class="badge badge-white badge-custom" href=/ title>Home</a>
+</li>
+<li class=list-inline-item>
+<a class="badge badge-white badge-custom" href=/hire/ title>Hire me</a>
+</li>
+<li class=list-inline-item>
+<a class="badge badge-white badge-custom" href=/posts/ title>Blog</a>
 </li>
 <li class=list-inline-item>
 <a class="badge badge-white badge-custom" href=/about/ title>About</a>
 </li>
 </ul>
 <i></i>
-<ul id=nav-social class=list-inline>
-<li class="list-inline-item mr-3">
-<a href=https://github.com/davcri target=_blank>
-<i class="fab fa-github fa-1x text-muted" style=width:32px;height:32px></i>
-</a>
-</li>
-<li class="list-inline-item mr-3">
-<a href=https://twitter.com/dav__cri target=_blank>
-<i class="fab fa-twitter fa-1x text-muted" style=width:32px;height:32px></i>
-</a>
-</li>
-<li class="list-inline-item mr-3">
-<a href=mailto:davcri91@gmail.com target=_blank>
-<i class="fas fa-envelope fa-1x text-muted" style=width:32px;height:32px></i>
-</a>
-</li>
-<li class="list-inline-item mr-3">
-<a href=https://www.linkedin.com/in/davide-cristini-a8199715a/ target=_blank>
-<i class="fab fa-linkedin fa-1x text-muted" style=width:32px;height:32px></i>
-</a>
-</li>
-<li class="list-inline-item mr-3">
-<a href=https://davcri.github.io/index.xml target=_blank>
-<i class="fa fa-1x fa-rss text-muted"></i>
-</a>
-</li>
-</ul>
 </div>
 </div>
 </nav>
@@ -155,14 +128,35 @@ and made a mistake with my first pull request.</p>
 <script type=text/javascript>(function(){var a,b;if(window.location.hostname=="localhost")return;a=document.createElement('script'),a.type='text/javascript',a.async=!0,b='crystal-bit-io',a.src='//'+b+'.disqus.com/embed.js',(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(a)})()</script>
 <noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
 <a href=http://disqus.com/ class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
-<div id=footer>
+<div id=footer class=mt-4>
+<hr>
 <div class=row>
-<div class=col-3>
-</div>
-<div class=col-3>
+<div class=col-6>
+<p class="small text-muted">© 2021 Davide Cristini</p>
 </div>
 <div class="col-6 text-right">
-<p class="small text-muted"> © 2021 Davide Cristini </p>
+<ul id=nav-social class=list-inline>
+<li class="list-inline-item mr-3">
+<a href=https://github.com/davcri target=_blank>
+<i class="fab fa-github fa-1x text-muted" style=width:32px;height:32px></i>
+</a>
+</li>
+<li class="list-inline-item mr-3">
+<a href=https://twitter.com/dav__cri target=_blank>
+<i class="fab fa-twitter fa-1x text-muted" style=width:32px;height:32px></i>
+</a>
+</li>
+<li class="list-inline-item mr-3">
+<a href=mailto:davcri91@gmail.com target=_blank>
+<i class="fas fa-envelope fa-1x text-muted" style=width:32px;height:32px></i>
+</a>
+</li>
+<li class="list-inline-item mr-3">
+<a href=https://www.linkedin.com/in/davide-cristini-a8199715a/ target=_blank>
+<i class="fab fa-linkedin fa-1x text-muted" style=width:32px;height:32px></i>
+</a>
+</li>
+</ul>
 </div>
 </div>
 </div>

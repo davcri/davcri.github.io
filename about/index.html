@@ -1,7 +1,7 @@
 <!doctype html><html lang=en>
 <head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112742714-1"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-112742714-1')</script>
+<script>const activateAnalytics=window.location.hostname!=="localhost";if(activateAnalytics){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-112742714-1')}</script>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta property="og:site_name" content="davcri">
@@ -15,8 +15,6 @@
 <link rel=stylesheet href=https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css integrity=sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4 crossorigin=anonymous>
 <link rel=stylesheet href=https://use.fontawesome.com/releases/v5.2.0/css/all.css integrity=sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ crossorigin=anonymous>
 <link rel=stylesheet href=/css/main.css>
-<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel=stylesheet>
-<link href="https://fonts.googleapis.com/css?family=Staatliches" rel=stylesheet>
 </head>
 <body>
 <script src=https://code.jquery.com/jquery-3.3.1.slim.min.js integrity=sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo crossorigin=anonymous defer></script>
@@ -30,23 +28,108 @@
 <div class="col-sm-3 col-12 text-sm-right text-center pt-sm-4">
 </div>
 <div class="col-sm-9 col-12 text-sm-left text-center">
-<h2 class="m-0 mb-2 mt-4">
-<a href=/ class=text-decoration-none>
-davcri
-</a>
+<h2 class="m-0 mb-0 mt-4">
+<a href=/ class=text-decoration-none> davcri </a>
 </h2>
-<p class="text-muted mb-1">
-Freelance game developer
-</p>
-<ul id=nav-links class="list-inline mb-2">
+<p class="muted small mt-0">Freelance software developer</p>
+<ul id=nav-links class="list-inline mb-3">
 <li class=list-inline-item>
-<a class="badge badge-white badge-custom" href=/ title>Blog</a>
+<a class="badge badge-white badge-custom" href=/ title>Home</a>
+</li>
+<li class=list-inline-item>
+<a class="badge badge-white badge-custom" href=/hire/ title>Hire me</a>
+</li>
+<li class=list-inline-item>
+<a class="badge badge-white badge-custom" href=/posts/ title>Blog</a>
 </li>
 <li class=list-inline-item>
 <a class="badge badge-white badge-custom active" href=/about/ title>About</a>
 </li>
 </ul>
 <i></i>
+</div>
+</div>
+</nav>
+<style>@media(max-width:576px){.align-right{text-align:left!important}}@media(min-width:576px){.align-right{text-align:right!important}; } small { color: gray; }}</style>
+<div id=about>
+<div>
+<h3>Past experiences</h3>
+<dl class=row>
+<dt class="col-sm-2 text-right pr-0">2017</dt>
+<dd class=col-sm-10>
+<p>
+I graduated in computer engineering in L'Aquila, Italy.
+</p>
+<p>
+Bachelor thesis: <em>"Developing open source web applications with Django web framework"</em>
+</p>
+</dd>
+<dt class="col-sm-2 text-right pr-0">2018</dt>
+<dd class=col-sm-10>
+<p>
+I moved to London, UK and worked as fullstack web developer. <br>
+I worked on the frontend using TypeScript and Angular framework. Also developed REST APIs using Python 3 and Django.
+</p>
+<p class="mb-1 mt-1">
+<b>Side projects:</b>
+<ul>
+<li>
+<a href=/posts/cs50-install-love2d-on-linux/>Harvard's Game Dev course</a>
+</li>
+</ul>
+</p>
+</dd>
+<dt class="col-sm-2 text-right pr-0">2019</dt>
+<dd class=col-sm-10>
+<p>
+Worked with Rising Pixel, a company based in Las Palmas, Spain. I created dozens of
+games using Phaser 2 and Phaser 3. I worked on playable ads and advergames.
+</p>
+</dd>
+<dt class="col-sm-2 text-right pr-0">2020</dt>
+<dd class=col-sm-10>
+<p>
+Started freelancing developing games and creative web applications. Technologies: ThreeJS, PhaserJS, VueJS, Godot Engine 3.
+</p>
+</dd>
+<dt class="col-sm-2 text-right pr-0">2021</dt>
+<dd class=col-sm-10>
+<p>
+Developed "Project virtual experience", a 3D web application featuring ThreeJs, Photon networking, VueJS UI and real time chat.
+</p>
+</dd>
+</dl>
+<h3>Projects</h3>
+<dl class=row>
+<dt class="col-sm-3 align-right">
+<a href=https://github.com/crystal-bit>Crystal Bit</a> <br>
+</dt>
+<dd class=col-sm-9>
+<p>
+Video tutorials on game development. <br>
+100+ videos, 200'000+ views and 2000+ subscribers
+from the Italian community.
+<br>
+<small>
+Godot Engine, Blender, Gimp, C++, OpenGL
+</small>
+<br>
+<small>
+2018 - ongoing
+</small>
+</p>
+<img class=img-fluid src=/img/portfolio/analytics2021.png alt>
+</dd>
+</dl>
+</div>
+</div>
+<div id=footer class=mt-4>
+<hr>
+<div class=row>
+<div class=col-6>
+<p class="small text-muted">© 2021 Davide Cristini</p>
+</div>
+<div class="col-6 text-right">
 <ul id=nav-social class=list-inline>
 <li class="list-inline-item mr-3">
 <a href=https://github.com/davcri target=_blank>
@@ -68,103 +151,7 @@ Freelance game developer
 <i class="fab fa-linkedin fa-1x text-muted" style=width:32px;height:32px></i>
 </a>
 </li>
-<li class="list-inline-item mr-3">
-<a href=https://davcri.github.io/index.xml target=_blank>
-<i class="fa fa-1x fa-rss text-muted"></i>
-</a>
-</li>
 </ul>
-</div>
-</div>
-</nav>
-<style>@media(max-width:576px){.align-right{text-align:left!important}}@media(min-width:576px){.align-right{text-align:right!important}; } small { color: gray; }}</style>
-<div id=about>
-<div>
-<p>
-Hi, I'm <b>Davide Cristini</b>. <br>
-I'm a freelance developer passionate about videogames and open source software. <br>
-</p>
-<h3>Work</h3>
-<dl class=row>
-<dt class="col-sm-3 align-right">
-<a href=https://www.risingpixel.com>Rising Pixel</a> <br>
-</dt>
-<dd class=col-sm-9>
-Game programmer & playable ads developer. <br>
-<small>
-HTML5, JavaScript, Phaser 2, Phaser 3, three.js, WebGL, GLSL
-</small>
-<br>
-<small>
-2019 - ongoing
-</small>
-</dd>
-<dt class="col-sm-3 align-right">
-<a href=https://github.com/crystal-bit>Crystal Bit</a> <br>
-</dt>
-<dd class=col-sm-9>
-Open source gamedev video tutorials. Content creator on YouTube.
-<br>
-<small>
-Godot Engine, Blender, Gimp
-</small>
-<br>
-<small>
-2018 - ongoing
-</small>
-</dd>
-</dl>
-<h3>Games</h3>
-<dl class=row>
-<dt class="col-sm-3 align-right">
-<a href=https://youareuto.com/>YouAreUto</a>
-</dt>
-<dd class=col-sm-9>
-Puzzle Android game, Japan-inspired
-</dd>
-<dt class="col-sm-3 align-right">
-<a href=https://github.com/crystal-bit/angry-aliens>Angry Aliens</a> <br>
-</dt>
-<dd class=col-sm-9>
-Angry Birds open source clone
-</dd>
-<dt class="col-sm-3 align-right">
-<a href=https://github.com/crystal-bit/triple-triad-godot>Triple Triad</a> <br>
-</dt>
-<dd class=col-sm-9>
-Re-implementation from Final Fantasy VIII
-</dd>
-<dt class="col-sm-3 align-right">
-<a href=https://github.com/crystal-bit/space-shooter>Space Shooter</a> <br>
-</dt>
-<dd class=col-sm-9>
-2D scrolling shooter developed with the community during Hacktoberfest.
-</dd>
-</dl>
-<p>
-Sometimes I upload games on <a href=https://crystalbit.itch.io/>Itch.io</a>
-</p>
-<h3>Other</h3>
-<p>
-Take a look at my
-<a href=https://www.linkedin.com/in/davide-cristini-a8199715a/>LinkedIn</a>
-page for other work experiences.
-</p>
-<h3>Contacts</h3>
-<p>
-Email: <a href=mailto:davcri91@gmail.com>davcri91(at)gmail.com</a> <br>
-Twitter: <a href=https://twitter.com/dav__cri>@dav__cri</a>
-</p>
-</div>
-</div>
-<div id=footer>
-<div class=row>
-<div class=col-3>
-</div>
-<div class=col-3>
-</div>
-<div class="col-6 text-right">
-<p class="small text-muted"> © 2021 Davide Cristini </p>
 </div>
 </div>
 </div>
