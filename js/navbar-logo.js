@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderer.setSize(canvas.innerWidth, canvas.innerHeight);
   w = canvas.clientWidth;
   h = canvas.clientHeight;
+  const minSize = Math.min(w, h);
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(70, w / h, 300, 1000);
 
@@ -21,8 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const white = "#F7F7F7";
   scene.background = new THREE.Color(white);
   scene.fog = new THREE.Fog(0xffaaaa, 500, 700);
-  const geometry = new THREE.BoxGeometry(w / 2, w / 2, w / 2);
-  const geometry2 = new THREE.BoxGeometry(w * 0.6, w * 0.6, w * 0.6);
+  const geometry = new THREE.BoxGeometry(minSize / 2, minSize / 2, minSize / 2);
+  const geometry2 = new THREE.BoxGeometry(minSize * 0.6, minSize * 0.6, minSize * 0.6);
   const material = new THREE.MeshNormalMaterial();
   // material.fog = new THREE.Fog(0xffaaaa, 500, 700);
   const wireCube = new THREE.Mesh(
@@ -73,7 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
     camera.aspect = w / h;
     camera.fov = rad2Deg(2 * Math.atan(h / 2 / camera.position.z));
     camera.updateProjectionMatrix();
-    // TODO: update geometries?
+    canvas.style.width = "100%"
+    canvas.style.height = "100%"
   }
 
   let elapsedTime = 0;
