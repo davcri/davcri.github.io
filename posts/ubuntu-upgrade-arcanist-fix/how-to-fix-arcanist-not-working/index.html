@@ -1,141 +1,19 @@
-<!doctype html><html lang=en>
-<head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112742714-1"></script>
-<script>const activateAnalytics=window.location.hostname!=="localhost";if(activateAnalytics){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-112742714-1')}</script>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<meta property="og:site_name" content="davcri">
-<title> How to fix Arcanist after upgrading to Ubuntu 18.04 </title>
-<meta name=description content="After upgrading to Ubuntu 18.04 LTS, I encountered this issue with arc:
-&ldquo;PHP CONFIGURATION …">
-<meta property="og:title" content="How to fix Arcanist after upgrading to Ubuntu 18.04">
-<meta property="og:image" itemprop=image content="https://davcri.github.io/img/posts/thumbs/arcanist-fix.png">
-<meta property="og:url" content="https://davcri.github.io/posts/ubuntu-upgrade-arcanist-fix/how-to-fix-arcanist-not-working/">
-<meta property="og:description" content="After upgrading to Ubuntu 18.04 LTS, I encountered this issue with arc:
-&ldquo;PHP CONFIGURATION …">
-<meta property="og:type" content="article">
-<link rel=stylesheet href=https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css integrity=sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4 crossorigin=anonymous>
-<link rel=stylesheet href=https://use.fontawesome.com/releases/v5.2.0/css/all.css integrity=sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ crossorigin=anonymous>
-<link rel=stylesheet href=/css/main.css>
-<script src=/js/three.js></script>
-</head>
-<body>
-<script src=https://code.jquery.com/jquery-3.3.1.slim.min.js integrity=sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo crossorigin=anonymous defer></script>
+<!doctype html><html lang=en><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-112742714-1"></script>
+<script>const activateAnalytics=window.location.hostname!=="localhost";if(activateAnalytics){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-112742714-1")}</script><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta property="og:site_name" content="davcri"><title>How to fix Arcanist after upgrading to Ubuntu 18.04</title><meta name=description content="After upgrading to Ubuntu 18.04 LTS, I encountered this issue with arc:
+&ldquo;PHP CONFIGURATION …"><meta property="og:title" content="How to fix Arcanist after upgrading to Ubuntu 18.04"><meta property="og:image" itemprop=image content="https://davcri.github.io/img/posts/thumbs/arcanist-fix.png"><meta property="og:url" content="https://davcri.github.io/posts/ubuntu-upgrade-arcanist-fix/how-to-fix-arcanist-not-working/"><meta property="og:description" content="After upgrading to Ubuntu 18.04 LTS, I encountered this issue with arc:
+&ldquo;PHP CONFIGURATION …"><meta property="og:type" content="article"><link rel=stylesheet href=https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css integrity=sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4 crossorigin=anonymous><link rel=stylesheet href=https://use.fontawesome.com/releases/v5.2.0/css/all.css integrity=sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ crossorigin=anonymous><link rel=stylesheet href=/css/main.css><script src=/js/three.js></script></head><body><script src=https://code.jquery.com/jquery-3.3.1.slim.min.js integrity=sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo crossorigin=anonymous defer></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js integrity=sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ crossorigin=anonymous defer></script>
 <script src=https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js integrity=sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm crossorigin=anonymous defer></script>
-<script src=https://use.fontawesome.com/03364e4af9.js defer></script>
-<div class=container>
-<style>.badge-custom{background-color:#f4e9ff;padding:.5em;color:#777}.active{color:#333;border-color:#000;border:rgba(.6,.6,.6,.1);border-width:1px;border-style:solid}</style>
-<script src=/js/navbar-logo.js></script>
-<nav class="mt-md-5 mt-sm-4 mb-2">
-<div class=row>
-<div class="col-sm-3 col-12 m-0 p-0">
-<canvas id=logo-canvas style=min-height:64px;max-height:160px;box-sizing:border-box;background-color:transparent;width:100%;height:100%>
-</div>
-<div class="col-sm-9 col-12 text-sm-left text-center">
-<h2 id=davcri>
-<a href=/ class=text-decoration-none> davcri </a>
-</h2>
-<p class="muted small mt-0">Freelance developer and tutor</p>
-<ul id=nav-links class="list-inline mb-3">
-<li class=list-inline-item>
-<a class="badge badge-white badge-custom" href=/ title>Home</a>
-</li>
-<li class=list-inline-item>
-<a class="badge badge-white badge-custom" href=/hire/ title>Hire me</a>
-</li>
-<li class=list-inline-item>
-<a class="badge badge-white badge-custom" href=/posts/ title>Blog</a>
-</li>
-<li class=list-inline-item>
-<a class="badge badge-white badge-custom" href=/about/ title>About</a>
-</li>
-</ul>
-<i></i>
-</div>
-</div>
-</nav>
-<div id=post-container>
-<h2 class=card-title> How to fix Arcanist after upgrading to Ubuntu 18.04 </h2>
-<div class=row>
-<div class=col>
-<p class=text-muted>
-1min read <br>
-<span class="badge badge-primary">Linux</span>
-</p>
-</div>
-<div class=col>
-<p class="text-right text-muted">
-May 23, 2018
-</p>
-</div>
-</div>
-<div id=post-header class=text-center>
-<img class="img-fluid rounded" src=/img/posts/thumbs/arcanist-fix.png alt style=max-height:20em>
-</div>
-<hr>
-<div id=post-body class=card-text>
-<p>After upgrading to <em>Ubuntu 18.04 LTS</em>, I encountered this issue with <code>arc</code>:
+<script src=https://use.fontawesome.com/03364e4af9.js defer></script><div class=container><style>.badge-custom{background-color:#f4e9ff;padding:.5em;color:#777}.active{color:#333;border-color:#000;border:rgba(.6,.6,.6,.1);border-width:1px;border-style:solid}</style><nav class="mt-md-5 mt-sm-4 mb-4"><div class=row><div class="col-sm-3 col-12 m-0 p-0"><canvas id=logo-canvas style=min-height:64px;max-height:160px;box-sizing:border-box;background-color:transparent;width:100%;height:100%></div><div class="col-sm-9 col-12 text-sm-left text-center"><h2 id=davcri><a href=/ class=text-decoration-none>davcri</a></h2><p class="muted small mt-0"></p><ul id=nav-links class="list-inline mb-3"><li class=list-inline-item><a class="badge badge-white badge-custom" href=/ title>Home</a></li><li class=list-inline-item><a class="badge badge-white badge-custom" href=/posts/ title>Blog</a></li><li class=list-inline-item><a class="badge badge-white badge-custom" href=/hire/ title>Work with me</a></li><li class=list-inline-item><a class="badge badge-white badge-custom" href=/about/ title>About</a></li></ul><i></i></div></div></nav><script src=/js/navbar-logo.js></script><div id=post-container><h2 class=card-title>How to fix Arcanist after upgrading to Ubuntu 18.04</h2><div class=row><div class=col><p class=text-muted>1min read<br><span class="badge badge-primary">Linux</span></p></div><div class=col><p class="text-right text-muted">May 23, 2018</p></div></div><div id=post-header class=text-center><img class="img-fluid rounded" src=/img/posts/thumbs/arcanist-fix.png alt style=max-height:20em></div><hr><div id=post-body class=card-text><p>After upgrading to <em>Ubuntu 18.04 LTS</em>, I encountered this issue with <code>arc</code>:
 &ldquo;PHP CONFIGURATION ERROR&rdquo;.
-Here it is a really quick fix.</p>
-<h2 id=how-to-fix-php-configuration-error>How to fix &ldquo;PHP CONFIGURATION ERROR&rdquo;</h2>
-<p>I started using <code>arc</code> (also know as <strong>Arcanist</strong>, a Phabricator tool for CVS workflow) with Ubuntu 17.10 on a Dell XPS 13.</p>
-<p>A week ago, I upgraded my system to the shiny Ubuntu 18.04 LTS.
-It went all fine, except for <code>arc</code> that started throwing this error when executed:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>$ arc
-
-PHP CONFIGURATION ERRORS
-
-You need to install the cURL PHP extension, with <span style=color:#e6db74>&#39;apt-get install php-curl&#39;</span>.
-</code></pre></div><p>The strange thing is that the recommended fix was not working at all.<br>
-I didn&rsquo;t investigate (I wanted
+Here it is a really quick fix.</p><h2 id=how-to-fix-php-configuration-error>How to fix &ldquo;PHP CONFIGURATION ERROR&rdquo;</h2><p>I started using <code>arc</code> (also know as <strong>Arcanist</strong>, a Phabricator tool for CVS workflow) with Ubuntu 17.10 on a Dell XPS 13.</p><p>A week ago, I upgraded my system to the shiny Ubuntu 18.04 LTS.
+It went all fine, except for <code>arc</code> that started throwing this error when executed:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>$ arc
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>PHP CONFIGURATION ERRORS
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>You need to install the cURL PHP extension, with <span style=color:#e6db74>&#39;apt-get install php-curl&#39;</span>.
+</span></span></code></pre></div><p>The strange thing is that the recommended fix was not working at all.<br>I didn&rsquo;t investigate (I wanted
 to come back operative as fast as possible), but I highly suspect that it was probably
-related to the new PHP version.</p>
-<p>However, <strong>to fix the error I just reinstalled php-cli with</strong>:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>sudo apt install php-cli
-</code></pre></div><p>If this does not work, try also:</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>sudo apt install php7.2 php7.2-common php7.2-cli
-</code></pre></div>
-</div>
-</div>
-<div id=disqus_thread></div>
-<script type=text/javascript>(function(){var a,b;if(window.location.hostname=="localhost")return;a=document.createElement('script'),a.type='text/javascript',a.async=!0,b='crystal-bit-io',a.src='//'+b+'.disqus.com/embed.js',(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(a)})()</script>
-<noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
-<a href=http://disqus.com/ class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
-<div id=footer class=mt-4>
-<hr>
-<div class=row>
-<div class=col-5>
-<p class="small text-muted">© 2022 Davide Cristini</p>
-</div>
-<div class="col-7 text-right">
-<ul id="nav-social m-sm-0" class=list-inline>
-<li class="list-inline-item m-md-2 m-sm-2">
-<a href=https://github.com/davcri target=_blank>
-<i class="fab fa-github fa-1x text-muted"></i>
-</a>
-</li>
-<li class="list-inline-item m-md-2 m-sm-2">
-<a href=https://twitter.com/dav__cri target=_blank>
-<i class="fab fa-twitter fa-1x text-muted"></i>
-</a>
-</li>
-<li class="list-inline-item m-md-2 m-sm-2">
-<a href=mailto:davcri91@gmail.com target=_blank>
-<i class="fas fa-envelope fa-1x text-muted"></i>
-</a>
-</li>
-<li class="list-inline-item m-md-2 m-sm-2">
-<a href=https://www.linkedin.com/in/davide-cristini-a8199715a/ target=_blank>
-<i class="fab fa-linkedin fa-1x text-muted"></i>
-</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<script type=text/javascript src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?tracking=1&thirdparty=1&always=1"></script>
-<script>function enableGoogleAnalytics(){window.dataLayer=window.dataLayer||[];function a(){dataLayer.push(arguments)}a('js',new Date),a('config','')}function getCookiesAsObj(){return document.cookie.split(';').reduce((b,d)=>{const[c,a]=d.trim().split('=').map(decodeURIComponent),e=a=>/^\d+$/.test(a);try{return Object.assign(b,{[c]:e(a)?a:JSON.parse(a)})}catch(d){return Object.assign(b,{[c]:a})}},{})}const cookies=getCookiesAsObj();cookies.cookiebar==='CookieAllowed'?enableGoogleAnalytics():document.addEventListener('click',b=>{const a=getCookiesAsObj();a.cookiebar==='CookieAllowed'&&this.enableGoogleAnalytics()})</script>
-</body>
-</html>
+related to the new PHP version.</p><p>However, <strong>to fix the error I just reinstalled php-cli with</strong>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>sudo apt install php-cli
+</span></span></code></pre></div><p>If this does not work, try also:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>sudo apt install php7.2 php7.2-common php7.2-cli
+</span></span></code></pre></div></div></div><div id=disqus_thread></div><script type=text/javascript>(function(){if(window.location.hostname=="localhost")return;var t,e=document.createElement("script");e.type="text/javascript",e.async=!0,t="crystal-bit-io",e.src="//"+t+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)})()</script><noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=http://disqus.com/ class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a><div id=footer class=mt-4><hr><div class=row><div class=col-5><p class="small text-muted">© 2022 Davide Cristini</p></div><div class="col-7 text-right"><ul id="nav-social m-sm-0" class=list-inline><li class="list-inline-item m-md-2 m-sm-2"><a href=https://github.com/davcri target=_blank><i class="fab fa-github fa-1x text-muted"></i></a></li><li class="list-inline-item m-md-2 m-sm-2"><a href=https://twitter.com/dav__cri target=_blank><i class="fab fa-twitter fa-1x text-muted"></i></a></li><li class="list-inline-item m-md-2 m-sm-2"><a href=mailto:davcri91@gmail.com target=_blank><i class="fas fa-envelope fa-1x text-muted"></i></a></li><li class="list-inline-item m-md-2 m-sm-2"><a href=https://www.linkedin.com/in/davide-cristini-a8199715a/ target=_blank><i class="fab fa-linkedin fa-1x text-muted"></i></a></li></ul></div></div></div></div><script>const videos=document.getElementsByTagName("video");let i=0;for(const e of videos)e.controls&&(i+=1,e.removeAttribute("controls"),setTimeout(t=>{e.play()},i*1e3))</script><script type=text/javascript src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?tracking=1&thirdparty=1&always=1"></script><script>function enableGoogleAnalytics(){window.dataLayer=window.dataLayer||[];function e(){dataLayer.push(arguments)}e("js",new Date),e("config",'')}function getCookiesAsObj(){return document.cookie.split(";").reduce((t,s)=>{const[n,e]=s.trim().split("=").map(decodeURIComponent),o=e=>/^\d+$/.test(e);try{return Object.assign(t,{[n]:o(e)?e:JSON.parse(e)})}catch(s){return Object.assign(t,{[n]:e})}},{})}const cookies=getCookiesAsObj();cookies.cookiebar==="CookieAllowed"?enableGoogleAnalytics():document.addEventListener("click",t=>{const e=getCookiesAsObj();e.cookiebar==="CookieAllowed"&&this.enableGoogleAnalytics()})</script></body></html>
